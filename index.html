@@ -1,0 +1,2365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of a Software Engineer - Showcasing engineering projects, technical skills, and experience.">
+  <meta name="keywords" content="Software Engineer, Web Development, Full Stack, Frontend, Backend, Portfolio">
+  <meta name="author" content="Maddi Sahasra">
+  <title>Maddi Sahasra | Software Engineer Portfolio</title>
+  
+  <!-- Google Fonts: Inter, Outfit, Silkscreen & Press Start 2P for Pixel Aesthetics -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="has-vertical-sidebar">
+
+  <!-- ================================================================= -->
+  <!-- MOBILE TOPBAR HEADER (Responsive viewports < 1024px)              -->
+  <!-- ================================================================= -->
+  <header id="mobile-topbar" class="mobile-topbar" aria-label="Mobile Navigation Bar">
+    <div class="mobile-topbar-inner">
+      <!-- Accessible Hamburger Button -->
+      <button id="sidebar-toggle-btn" class="sidebar-toggle-btn" type="button" aria-expanded="false" aria-controls="sidebar-nav" aria-label="Toggle navigation menu">
+        <span class="hamburger-box">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </span>
+      </button>
+
+      <a href="#hero" class="mobile-brand" aria-label="Home">
+        <span class="pixel-brand-icon" aria-hidden="true">👾</span>
+        <span class="brand-text">Dev<span class="brand-accent">.Pixel</span></span>
+      </a>
+
+      <!-- Quick Night Mode Toggle on Mobile Topbar -->
+      <div class="mobile-theme-toggle">
+        <button id="mobile-theme-toggle" class="pixel-toggle-btn-compact" type="button" aria-label="Toggle Night Mode" title="Toggle Theme">
+          <span class="theme-icon sun-icon" aria-hidden="true">☀️</span>
+          <span class="theme-icon moon-icon" aria-hidden="true">🌙</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Backdrop Overlay -->
+  <div id="sidebar-backdrop" class="sidebar-backdrop" aria-hidden="true"></div>
+
+  <!-- ================================================================= -->
+  <!-- VERTICAL PIXEL ART NAVIGATION (LEFT SIDEBAR)                      -->
+  <!-- ================================================================= -->
+  <aside id="sidebar-container" class="pixel-sidebar-aside" aria-label="Main Sidebar Navigation">
+    <nav id="sidebar-nav" class="pixel-sidebar-nav" aria-label="Primary Navigation">
+      
+      <!-- Pixel Brand & Status Badge -->
+      <div class="sidebar-brand-card">
+        <a href="#hero" class="sidebar-brand-logo" aria-label="Dev.Pixel Home">
+          <span class="pixel-avatar-icon" aria-hidden="true">👾</span>
+          <div class="brand-info">
+            <span class="pixel-brand-title">DEV.PIXEL</span>
+            <span class="pixel-brand-sub">LVL 99 ARCHITECT</span>
+          </div>
+        </a>
+
+        <!-- Retro Status Bar -->
+        <div class="sidebar-status-banner">
+          <span class="pixel-pulse-diamond" aria-hidden="true">◆</span>
+          <span class="status-banner-text">STATUS: ONLINE</span>
+        </div>
+      </div>
+
+      <!-- Vertical Links List -->
+      <div class="sidebar-menu-section">
+        <div class="sidebar-menu-heading">
+          <span class="pixel-arrow-heading" aria-hidden="true">▼</span>
+          <span>QUEST NAVIGATION</span>
+        </div>
+
+        <ul class="sidebar-nav-list" role="list">
+          <!-- 1. Home -->
+          <li class="sidebar-nav-item">
+            <a href="#hero" class="sidebar-nav-link active" data-nav="hero" aria-current="page">
+              <span class="nav-pixel-glyph" aria-hidden="true">🏠</span>
+              <span class="nav-label">Home</span>
+              <span class="nav-cursor" aria-hidden="true">▶</span>
+            </a>
+          </li>
+
+          <!-- 2. About Me -->
+          <li class="sidebar-nav-item">
+            <a href="#about" class="sidebar-nav-link" data-nav="about">
+              <span class="nav-pixel-glyph" aria-hidden="true">📜</span>
+              <span class="nav-label">About Me</span>
+              <span class="nav-cursor" aria-hidden="true">▶</span>
+            </a>
+          </li>
+
+          <!-- 3. Skills -->
+          <li class="sidebar-nav-item">
+            <a href="#skills" class="sidebar-nav-link" data-nav="skills">
+              <span class="nav-pixel-glyph" aria-hidden="true">⚡</span>
+              <span class="nav-label">Skills</span>
+              <span class="nav-cursor" aria-hidden="true">▶</span>
+            </a>
+          </li>
+
+          <!-- 4. Timeline -->
+          <li class="sidebar-nav-item">
+            <a href="#timeline" class="sidebar-nav-link" data-nav="timeline">
+              <span class="nav-pixel-glyph" aria-hidden="true">⏳</span>
+              <span class="nav-label">Timeline</span>
+              <span class="nav-cursor" aria-hidden="true">▶</span>
+            </a>
+          </li>
+
+          <!-- 5. Projects -->
+          <li class="sidebar-nav-item">
+            <a href="#projects" class="sidebar-nav-link" data-nav="projects">
+              <span class="nav-pixel-glyph" aria-hidden="true">🚀</span>
+              <span class="nav-label">Projects</span>
+              <span class="nav-cursor" aria-hidden="true">▶</span>
+            </a>
+          </li>
+
+          <!-- 6. Testimonials -->
+          <li class="sidebar-nav-item">
+            <a href="#testimonials" class="sidebar-nav-link" data-nav="testimonials">
+              <span class="nav-pixel-glyph" aria-hidden="true">⭐</span>
+              <span class="nav-label">Testimonials</span>
+              <span class="nav-cursor" aria-hidden="true">▶</span>
+            </a>
+          </li>
+
+          <!-- 7. Chat -->
+          <li class="sidebar-nav-item">
+            <a href="#chat" class="sidebar-nav-link" data-nav="chat">
+              <span class="nav-pixel-glyph" aria-hidden="true">💬</span>
+              <span class="nav-label">Chat</span>
+              <span class="nav-cursor" aria-hidden="true">▶</span>
+            </a>
+          </li>
+
+          <!-- 8. Contact -->
+          <li class="sidebar-nav-item">
+            <a href="#contact" class="sidebar-nav-link" data-nav="contact">
+              <span class="nav-pixel-glyph" aria-hidden="true">✉️</span>
+              <span class="nav-label">Contact</span>
+              <span class="nav-cursor" aria-hidden="true">▶</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Sidebar Bottom: Night Mode Toggle & Retro Meta -->
+      <div class="sidebar-footer">
+        <!-- Night Mode Toggle (CSS Media Query Driven) -->
+        <div class="theme-toggle-box">
+          <span class="theme-box-title">THEME MODE</span>
+          <button id="theme-toggle" class="pixel-toggle-btn" type="button" aria-label="Toggle Night Mode" title="Toggle Theme (Auto / Dark / Light)">
+            <span class="theme-icon sun-icon" aria-hidden="true">☀️</span>
+            <span class="theme-icon moon-icon" aria-hidden="true">🌙</span>
+            <span class="theme-mode-tag" id="theme-mode-tag">Auto</span>
+            <span class="visually-hidden">Toggle Dark / Light Mode</span>
+          </button>
+        </div>
+
+        <div class="sidebar-pixel-meta">
+          <span class="meta-heart" aria-hidden="true">♥</span>
+          <span>SYS: 60 FPS // READY</span>
+        </div>
+      </div>
+
+    </nav>
+  </aside>
+
+
+  <!-- ================================================================= -->
+  <!-- MAIN CONTENT AREA                                                 -->
+  <!-- ================================================================= -->
+  <main id="main-content">
+
+    <!-- =============================================================== -->
+    <!-- HERO SECTION (Lavender Minimal Design with Background Image)     -->
+    <!-- =============================================================== -->
+    <section id="hero" class="hero-section" aria-labelledby="hero-title">
+      <!-- Ambient Lavender Glow -->
+      <div class="hero-ambient-glow" aria-hidden="true"></div>
+
+      <div class="container hero-container">
+        <!-- Hero Text Content -->
+        <div class="hero-content">
+          <div class="badge hero-badge">
+            <span class="badge-dot" aria-hidden="true"></span>
+            <span>Available for new opportunities</span>
+          </div>
+
+          <!-- Welcome Title -->
+          <h1 id="hero-title" class="hero-title">
+            <span class="hero-welcome">Welcome, I'm</span>
+            <span class="gradient-text hero-name">Maddi Sahasra</span>
+          </h1>
+
+          <!-- Brief Tagline -->
+          <p class="hero-description hero-tagline">
+            Specializing in modern web applications, scalable architectures, and crafting elegant, user-centric digital experiences with a minimal lavender aesthetic.
+          </p>
+
+          <!-- Hero Actions -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span>
+              <span class="btn-arrow" aria-hidden="true">&rarr;</span>
+            </a>
+            <a href="#video-highlight" class="btn btn-secondary">
+              <span aria-hidden="true">▶</span>
+              <span>Watch Video Reel</span>
+            </a>
+            <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+          </div>
+
+          <!-- Quick Highlights / Attributes -->
+          <div class="hero-meta">
+            <span class="hero-meta-item"><span class="meta-icon" aria-hidden="true">📍</span> Open to Opportunities</span>
+            <span class="hero-meta-divider" aria-hidden="true">•</span>
+            <span class="hero-meta-item"><span class="meta-icon" aria-hidden="true">⚡</span> Full-Stack &amp; Cloud</span>
+          </div>
+        </div>
+
+        <!-- Hero Visual Showcase / Background Image Feature Card -->
+        <div class="hero-visual">
+          <div class="hero-portrait-card">
+            <div class="portrait-glow" aria-hidden="true"></div>
+            <div class="portrait-frame">
+              <img src="867f567d-8d0c-4471-8dfa-48e20be7da65.png" alt="Software Engineer Portrait" class="hero-portrait-img">
+            </div>
+            <div class="portrait-status-badge">
+              <span class="status-dot" aria-hidden="true"></span>
+              <span class="status-label">Software Engineer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END HERO SECTION -->
+
+
+    <!-- =============================================================== -->
+    <!-- ABOUT ME SECTION                                                -->
+    <!-- =============================================================== -->
+    <section id="about" class="about-section section-padding" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-subtitle">Character Lore // Biography</span>
+          <h2 id="about-title" class="section-title">About Maddi Sahasra</h2>
+        </header>
+
+        <div class="about-container-grid">
+          <!-- Left Column: Profile Image Card & Pixel Avatar Frame -->
+          <aside class="about-profile-column" aria-label="Profile Presentation">
+            <div class="about-profile-card">
+              <!-- Retro Card Header Badge -->
+              <div class="profile-card-header">
+                <span class="profile-tag-glyph" aria-hidden="true">👾</span>
+                <span class="profile-tag-text">[PLAYER_01: MADDI SAHASRA]</span>
+              </div>
+
+              <!-- Profile Image Container with Pixel Accent Frame -->
+              <div class="profile-image-frame">
+                <img src="867f567d-8d0c-4471-8dfa-48e20be7da65.png" alt="Maddi Sahasra - Software Engineer Portrait" class="about-profile-img">
+                <div class="pixel-corner-deco top-left" aria-hidden="true"></div>
+                <div class="pixel-corner-deco top-right" aria-hidden="true"></div>
+                <div class="pixel-corner-deco bottom-left" aria-hidden="true"></div>
+                <div class="pixel-corner-deco bottom-right" aria-hidden="true"></div>
+              </div>
+
+              <!-- Character Status & Attributes -->
+              <div class="profile-attributes">
+                <div class="attribute-row">
+                  <span class="attr-key">ROLE:</span>
+                  <span class="attr-val">Software Engineer</span>
+                </div>
+                <div class="attribute-row">
+                  <span class="attr-key">SPECIALTY:</span>
+                  <span class="attr-val">Full-Stack &amp; Systems</span>
+                </div>
+                <div class="attribute-row">
+                  <span class="attr-key">STATUS:</span>
+                  <span class="attr-val status-online">
+                    <span class="online-indicator" aria-hidden="true"></span> Available for Hire
+                  </span>
+                </div>
+              </div>
+
+              <!-- Resume CTA Link -->
+              <div class="profile-card-action">
+                <a href="Maddi_Sahasra_Tap_Academy_Resume_Final.pdf" target="_blank" class="btn btn-secondary resume-btn">
+                  <span aria-hidden="true">📄</span>
+                  <span>View Full Resume</span>
+                </a>
+              </div>
+            </div>
+          </aside>
+
+          <!-- Right Column: Bio, Career Highlights, Personal Interests & Stats -->
+          <article class="about-content-column">
+            <!-- Short Bio Intro -->
+            <div class="about-bio-lead">
+              <p class="lead-paragraph">
+                Hello! I'm <strong class="highlight-name">Maddi Sahasra</strong>, a dedicated software engineer driven by curiosity, clean architecture, and the joy of turning complex challenges into intuitive, high-performance web products.
+              </p>
+              <p>
+                With a background in computer science and full-stack software development, I specialize in architecting responsive user interfaces, dependable backend APIs, and scalable cloud services. I bridge technical rigor with a clean, minimal aesthetic, ensuring every application I craft is maintainable, fast, and accessible to everyone.
+              </p>
+            </div>
+
+            <!-- Career Highlights & Personal Interests Dual Grid -->
+            <div class="about-features-grid">
+              <!-- Career Highlights Block -->
+              <div class="about-feature-box">
+                <div class="feature-box-header">
+                  <span class="feature-icon" aria-hidden="true">💼</span>
+                  <h3 class="feature-title">Career Highlights</h3>
+                </div>
+                <ul class="feature-list" role="list">
+                  <li class="feature-item">
+                    <span class="feature-bullet" aria-hidden="true">▶</span>
+                    <div>
+                      <strong>Full-Stack Applications:</strong> Engineered scalable web systems utilizing modern tech stacks including React, TypeScript, Node.js, and SQL/NoSQL databases.
+                    </div>
+                  </li>
+                  <li class="feature-item">
+                    <span class="feature-bullet" aria-hidden="true">▶</span>
+                    <div>
+                      <strong>API &amp; System Integration:</strong> Designed RESTful endpoints, event-driven services, and secure authentication workflows with strong error resilience.
+                    </div>
+                  </li>
+                  <li class="feature-item">
+                    <span class="feature-bullet" aria-hidden="true">▶</span>
+                    <div>
+                      <strong>Quality &amp; Testing:</strong> Prioritized clean code, thorough unit testing, CI/CD automated deployment, and collaborative Agile methodologies.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Personal Interests Block -->
+              <div class="about-feature-box">
+                <div class="feature-box-header">
+                  <span class="feature-icon" aria-hidden="true">✨</span>
+                  <h3 class="feature-title">Personal Interests</h3>
+                </div>
+                <ul class="feature-list" role="list">
+                  <li class="feature-item">
+                    <span class="feature-bullet" aria-hidden="true">◆</span>
+                    <div>
+                      <strong>Open Source &amp; Dev Tooling:</strong> Exploring cutting-edge developer toolchains, CLI utilities, and modern web specifications that elevate engineering craft.
+                    </div>
+                  </li>
+                  <li class="feature-item">
+                    <span class="feature-bullet" aria-hidden="true">◆</span>
+                    <div>
+                      <strong>Retro Gaming &amp; Pixel Art:</strong> Inspired by 8-bit aesthetic nostalgia, arcade mechanics, expressive UI micro-interactions, and creative digital typography.
+                    </div>
+                  </li>
+                  <li class="feature-item">
+                    <span class="feature-bullet" aria-hidden="true">◆</span>
+                    <div>
+                      <strong>Continuous Growth:</strong> Tackling algorithmic puzzles, learning emerging cloud patterns, and engaging with the tech community.
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Minimal Highlights Stats Counter -->
+            <div class="about-stats-bar" aria-label="Key Milestones">
+              <div class="stat-pill">
+                <span class="stat-number">3+</span>
+                <span class="stat-caption">Years Experience</span>
+              </div>
+              <div class="stat-pill">
+                <span class="stat-number">20+</span>
+                <span class="stat-caption">Projects Completed</span>
+              </div>
+              <div class="stat-pill">
+                <span class="stat-number">100%</span>
+                <span class="stat-caption">Code Quality Commitment</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- END ABOUT SECTION -->
+
+
+    <!-- =============================================================== -->
+    <!-- SKILLS & CORE COMPETENCIES SECTION                              -->
+    <!-- Features 10 core competencies + technical stack progress bars   -->
+    <!-- =============================================================== -->
+    <section id="skills" class="skills-section section-padding" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-subtitle">SKILL TREE // ATTRIBUTES &amp; STACK</span>
+          <h2 id="skills-title" class="section-title">Core Competencies &amp; Technical Skills</h2>
+          <p class="section-description">
+            A comprehensive breakdown of engineering problem solving, collaborative leadership, and production-ready tech stack proficiency.
+          </p>
+        </header>
+
+        <!-- ============================================================= -->
+        <!-- 10 CORE PROFESSIONAL COMPETENCIES                             -->
+        <!-- ============================================================= -->
+        <div class="competencies-block">
+          <div class="block-header">
+            <span class="pixel-badge-indicator">
+              <span class="pixel-star-icon" aria-hidden="true">★</span> PROFESSIONAL ATTRIBUTES
+            </span>
+            <h3 class="competency-subtitle">Core Engineering Competencies</h3>
+          </div>
+
+          <div class="competencies-grid" role="list">
+            
+            <!-- 1. Problem Solving: Algorithmic decomposition, edge-case analysis, and bug isolation -->
+            <article class="competency-card pixel-box" role="listitem">
+              <div class="comp-card-top">
+                <span class="comp-icon" aria-hidden="true">🧩</span>
+                <span class="comp-level-badge">LVL 95</span>
+              </div>
+              <h4 class="comp-title">Problem Solving</h4>
+              <p class="comp-desc">Decomposing complex edge cases into robust, scalable algorithmic solutions.</p>
+              <!-- Progress Bar: Represents mastery in resolving architectural & debugging bottlenecks -->
+              <div class="comp-progress-wrap" aria-label="Problem Solving proficiency 95%">
+                <div class="comp-progress-bar">
+                  <div class="comp-progress-fill" style="width: 95%;"></div>
+                </div>
+                <span class="comp-progress-val">95%</span>
+              </div>
+            </article>
+
+            <!-- 2. Analytical Thinking: Evaluating system tradeoffs, Big-O complexity, and telemetry data -->
+            <article class="competency-card pixel-box" role="listitem">
+              <div class="comp-card-top">
+                <span class="comp-icon" aria-hidden="true">🧠</span>
+                <span class="comp-level-badge">LVL 92</span>
+              </div>
+              <h4 class="comp-title">Analytical Thinking</h4>
+              <p class="comp-desc">Evaluating performance metrics, Big-O complexities, and architectural trade-offs.</p>
+              <!-- Progress Bar: Represents quantitative reasoning and system optimization capacity -->
+              <div class="comp-progress-wrap" aria-label="Analytical Thinking proficiency 92%">
+                <div class="comp-progress-bar">
+                  <div class="comp-progress-fill" style="width: 92%;"></div>
+                </div>
+                <span class="comp-progress-val">92%</span>
+              </div>
+            </article>
+
+            <!-- 3. Team Collaboration: Cross-functional alignment, peer code reviews, and pair programming -->
+            <article class="competency-card pixel-box" role="listitem">
+              <div class="comp-card-top">
+                <span class="comp-icon" aria-hidden="true">🤝</span>
+                <span class="comp-level-badge">LVL 96</span>
+              </div>
+              <h4 class="comp-title">Team Collaboration</h4>
+              <p class="comp-desc">Fostering psychological safety, constructive reviews, and seamless Git workflows.</p>
+              <!-- Progress Bar: Represents synergy in Agile squads and open-source teamwork -->
+              <div class="comp-progress-wrap" aria-label="Team Collaboration proficiency 96%">
+                <div class="comp-progress-bar">
+                  <div class="comp-progress-fill" style="width: 96%;"></div>
+                </div>
+                <span class="comp-progress-val">96%</span>
+              </div>
+            </article>
+
+            <!-- 4. Communication: Translating complex technical designs into clear stakeholder deliverables -->
+            <article class="competency-card pixel-box" role="listitem">
+              <div class="comp-card-top">
+                <span class="comp-icon" aria-hidden="true">💬</span>
+                <span class="comp-level-badge">LVL 90</span>
+              </div>
+              <h4 class="comp-title">Communication</h4>
+              <p class="comp-desc">Articulating engineering solutions clearly to non-technical stakeholders and peers.</p>
+              <!-- Progress Bar: Represents verbal and written communicative clarity -->
+              <div class="comp-progress-wrap" aria-label="Communication proficiency 90%">
+                <div class="comp-progress-bar">
+                  <div class="comp-progress-fill" style="width: 90%;"></div>
+                </div>
+                <span class="comp-progress-val">90%</span>
+              </div>
+            </article>
+
+            <!-- 5. Leadership: Guiding feature ownership, mentoring junior engineers, and driving tech initiatives -->
+            <article class="competency-card pixel-box" role="listitem">
+              <div class="comp-card-top">
+                <span class="comp-icon" aria-hidden="true">👑</span>
+                <span class="comp-level-badge">LVL 88</span>
+              </div>
+              <h4 class="comp-title">Leadership</h4>
+              <p class="comp-desc">Championing architectural standards, mentoring peers, and driving sprints.</p>
+              <!-- Progress Bar: Represents technical initiative and peer mentorship influence -->
+              <div class="comp-progress-wrap" aria-label="Leadership proficiency 88%">
+                <div class="comp-progress-bar">
+                  <div class="comp-progress-fill" style="width: 88%;"></div>
+                </div>
+                <span class="comp-progress-val">88%</span>
+              </div>
+            </article>
+
+            <!-- 6. Time Management: Sprint estimation, milestone prioritization, and focused deep work -->
+            <article class="competency-card pixel-box" role="listitem">
+              <div class="comp-card-top">
+                <span class="comp-icon" aria-hidden="true">⏱️</span>
+                <span class="comp-level-badge">LVL 94</span>
+              </div>
+              <h4 class="comp-title">Time Management</h4>
+              <p class="comp-desc">Balancing rapid prototyping with meticulous code quality under tight sprint deadlines.</p>
+              <!-- Progress Bar: Represents sprint delivery reliability and punctuality -->
+              <div class="comp-progress-wrap" aria-label="Time Management proficiency 94%">
+                <div class="comp-progress-bar">
+                  <div class="comp-progress-fill" style="width: 94%;"></div>
+                </div>
+                <span class="comp-progress-val">94%</span>
+              </div>
+            </article>
+
+            <!-- 7. Adaptability: Fast onboarding across varied paradigms, evolving frameworks, and shifting needs -->
+            <article class="competency-card pixel-box" role="listitem">
+              <div class="comp-card-top">
+                <span class="comp-icon" aria-hidden="true">🔄</span>
+                <span class="comp-level-badge">LVL 95</span>
+              </div>
+              <h4 class="comp-title">Adaptability</h4>
+              <p class="comp-desc">Pivoting effortlessly across emerging technologies, dynamic toolchains, and requirements.</p>
+              <!-- Progress Bar: Represents resilience and agility amidst changing project scopes -->
+              <div class="comp-progress-wrap" aria-label="Adaptability proficiency 95%">
+                <div class="comp-progress-bar">
+                  <div class="comp-progress-fill" style="width: 95%;"></div>
+                </div>
+                <span class="comp-progress-val">95%</span>
+              </div>
+            </article>
+
+            <!-- 8. Technical Documentation: Generating thorough API schemas, READMEs, and architecture decisions -->
+            <article class="competency-card pixel-box" role="listitem">
+              <div class="comp-card-top">
+                <span class="comp-icon" aria-hidden="true">📝</span>
+                <span class="comp-level-badge">LVL 91</span>
+              </div>
+              <h4 class="comp-title">Technical Documentation</h4>
+              <p class="comp-desc">Authoring developer runbooks, OpenAPI specs, architecture guides, and inline documentation.</p>
+              <!-- Progress Bar: Represents clarity in knowledge transfer and codebase onboarding -->
+              <div class="comp-progress-wrap" aria-label="Technical Documentation proficiency 91%">
+                <div class="comp-progress-bar">
+                  <div class="comp-progress-fill" style="width: 91%;"></div>
+                </div>
+                <span class="comp-progress-val">91%</span>
+              </div>
+            </article>
+
+            <!-- 9. Project Management: Scoping releases, risk tracking, and backlog grooming in Agile sprints -->
+            <article class="competency-card pixel-box" role="listitem">
+              <div class="comp-card-top">
+                <span class="comp-icon" aria-hidden="true">📊</span>
+                <span class="comp-level-badge">LVL 89</span>
+              </div>
+              <h4 class="comp-title">Project Management</h4>
+              <p class="comp-desc">Tracking delivery roadmaps, managing dependency risks, and structuring backlogs.</p>
+              <!-- Progress Bar: Represents end-to-end milestone ownership and execution -->
+              <div class="comp-progress-wrap" aria-label="Project Management proficiency 89%">
+                <div class="comp-progress-bar">
+                  <div class="comp-progress-fill" style="width: 89%;"></div>
+                </div>
+                <span class="comp-progress-val">89%</span>
+              </div>
+            </article>
+
+            <!-- 10. Quick Learning: Continuous upskilling, mastering bleeding-edge libraries, and tech curiosity -->
+            <article class="competency-card pixel-box" role="listitem">
+              <div class="comp-card-top">
+                <span class="comp-icon" aria-hidden="true">⚡</span>
+                <span class="comp-level-badge">LVL 98</span>
+              </div>
+              <h4 class="comp-title">Quick Learning</h4>
+              <p class="comp-desc">Rapidly synthesizing new SDKs, cloud paradigms, and methodologies into production-ready code.</p>
+              <!-- Progress Bar: Represents accelerated ramp-up speed and tech curiosity -->
+              <div class="comp-progress-wrap" aria-label="Quick Learning proficiency 98%">
+                <div class="comp-progress-bar">
+                  <div class="comp-progress-fill" style="width: 98%;"></div>
+                </div>
+                <span class="comp-progress-val">98%</span>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- ============================================================= -->
+        <!-- TECHNICAL STACK PROGRESSION (LANGUAGES, FRAMEWORKS, TOOLS)    -->
+        <!-- ============================================================= -->
+        <div class="tech-stack-block">
+          <div class="block-header">
+            <span class="pixel-badge-indicator">
+              <span class="pixel-sword-icon" aria-hidden="true">⚔</span> TECH STACK ARSENAL
+            </span>
+            <h3 class="competency-subtitle">Languages, Frameworks &amp; Dev Tools</h3>
+          </div>
+
+          <div class="tech-stack-grid">
+            
+            <!-- Category 1: Programming Languages -->
+            <article class="tech-card pixel-box">
+              <div class="tech-card-header">
+                <span class="tech-header-icon" aria-hidden="true">💻</span>
+                <h4 class="tech-category-name">Programming Languages</h4>
+              </div>
+              
+              <ul class="tech-progress-list" role="list">
+                <!-- Skill Item: TypeScript & JavaScript -->
+                <li class="tech-progress-item">
+                  <div class="tech-meta">
+                    <span class="tech-name"><span class="tech-bullet" aria-hidden="true">▶</span> TypeScript / JavaScript (ES6+)</span>
+                    <span class="tech-pct">95%</span>
+                  </div>
+                  <div class="pixel-stat-bar" aria-label="TypeScript proficiency 95%">
+                    <div class="pixel-stat-fill" style="width: 95%;"></div>
+                  </div>
+                </li>
+
+                <!-- Skill Item: Python -->
+                <li class="tech-progress-item">
+                  <div class="tech-meta">
+                    <span class="tech-name"><span class="tech-bullet" aria-hidden="true">▶</span> Python</span>
+                    <span class="tech-pct">90%</span>
+                  </div>
+                  <div class="pixel-stat-bar" aria-label="Python proficiency 90%">
+                    <div class="pixel-stat-fill" style="width: 90%;"></div>
+                  </div>
+                </li>
+
+                <!-- Skill Item: Java -->
+                <li class="tech-progress-item">
+                  <div class="tech-meta">
+                    <span class="tech-name"><span class="tech-bullet" aria-hidden="true">▶</span> Java</span>
+                    <span class="tech-pct">85%</span>
+                  </div>
+                  <div class="pixel-stat-bar" aria-label="Java proficiency 85%">
+                    <div class="pixel-stat-fill" style="width: 85%;"></div>
+                  </div>
+                </li>
+
+                <!-- Skill Item: SQL & Database Querying -->
+                <li class="tech-progress-item">
+                  <div class="tech-meta">
+                    <span class="tech-name"><span class="tech-bullet" aria-hidden="true">▶</span> SQL &amp; Query Tuning</span>
+                    <span class="tech-pct">88%</span>
+                  </div>
+                  <div class="pixel-stat-bar" aria-label="SQL proficiency 88%">
+                    <div class="pixel-stat-fill" style="width: 88%;"></div>
+                  </div>
+                </li>
+
+                <!-- Skill Item: Modern HTML5 & CSS3 -->
+                <li class="tech-progress-item">
+                  <div class="tech-meta">
+                    <span class="tech-name"><span class="tech-bullet" aria-hidden="true">▶</span> HTML5 / Semantic CSS3</span>
+                    <span class="tech-pct">96%</span>
+                  </div>
+                  <div class="pixel-stat-bar" aria-label="HTML5 and CSS3 proficiency 96%">
+                    <div class="pixel-stat-fill" style="width: 96%;"></div>
+                  </div>
+                </li>
+              </ul>
+            </article>
+
+            <!-- Category 2: Frameworks & Libraries -->
+            <article class="tech-card pixel-box">
+              <div class="tech-card-header">
+                <span class="tech-header-icon" aria-hidden="true">⚛️</span>
+                <h4 class="tech-category-name">Frameworks &amp; Architecture</h4>
+              </div>
+
+              <ul class="tech-progress-list" role="list">
+                <!-- Skill Item: React -->
+                <li class="tech-progress-item">
+                  <div class="tech-meta">
+                    <span class="tech-name"><span class="tech-bullet" aria-hidden="true">▶</span> React &amp; State Management</span>
+                    <span class="tech-pct">94%</span>
+                  </div>
+                  <div class="pixel-stat-bar" aria-label="React proficiency 94%">
+                    <div class="pixel-stat-fill" style="width: 94%;"></div>
+                  </div>
+                </li>
+
+                <!-- Skill Item: Next.js -->
+                <li class="tech-progress-item">
+                  <div class="tech-meta">
+                    <span class="tech-name"><span class="tech-bullet" aria-hidden="true">▶</span> Next.js (SSR / App Router)</span>
+                    <span class="tech-pct">90%</span>
+                  </div>
+                  <div class="pixel-stat-bar" aria-label="Next.js proficiency 90%">
+                    <div class="pixel-stat-fill" style="width: 90%;"></div>
+                  </div>
+                </li>
+
+                <!-- Skill Item: Node.js / Express -->
+                <li class="tech-progress-item">
+                  <div class="tech-meta">
+                    <span class="tech-name"><span class="tech-bullet" aria-hidden="true">▶</span> Node.js &amp; Express APIs</span>
+                    <span class="tech-pct">89%</span>
+                  </div>
+                  <div class="pixel-stat-bar" aria-label="Node.js proficiency 89%">
+                    <div class="pixel-stat-fill" style="width: 89%;"></div>
+                  </div>
+                </li>
+
+                <!-- Skill Item: Tailwind CSS & Vanilla Modern CSS -->
+                <li class="tech-progress-item">
+                  <div class="tech-meta">
+                    <span class="tech-name"><span class="tech-bullet" aria-hidden="true">▶</span> Tailwind CSS &amp; UI Systems</span>
+                    <span class="tech-pct">92%</span>
+                  </div>
+                  <div class="pixel-stat-bar" aria-label="Tailwind CSS proficiency 92%">
+                    <div class="pixel-stat-fill" style="width: 92%;"></div>
+                  </div>
+                </li>
+
+                <!-- Skill Item: REST & GraphQL -->
+                <li class="tech-progress-item">
+                  <div class="tech-meta">
+                    <span class="tech-name"><span class="tech-bullet" aria-hidden="true">▶</span> RESTful &amp; GraphQL Services</span>
+                    <span class="tech-pct">88%</span>
+                  </div>
+                  <div class="pixel-stat-bar" aria-label="REST and GraphQL proficiency 88%">
+                    <div class="pixel-stat-fill" style="width: 88%;"></div>
+                  </div>
+                </li>
+              </ul>
+            </article>
+
+            <!-- Category 3: Tools, Cloud & Databases -->
+            <article class="tech-card pixel-box">
+              <div class="tech-card-header">
+                <span class="tech-header-icon" aria-hidden="true">🛠️</span>
+                <h4 class="tech-category-name">Cloud, Tools &amp; Data</h4>
+              </div>
+
+              <ul class="tech-progress-list" role="list">
+                <!-- Skill Item: Git & GitHub Actions -->
+                <li class="tech-progress-item">
+                  <div class="tech-meta">
+                    <span class="tech-name"><span class="tech-bullet" aria-hidden="true">▶</span> Git, GitHub &amp; CI/CD Pipelines</span>
+                    <span class="tech-pct">93%</span>
+                  </div>
+                  <div class="pixel-stat-bar" aria-label="Git and CI/CD proficiency 93%">
+                    <div class="pixel-stat-fill" style="width: 93%;"></div>
+                  </div>
+                </li>
+
+                <!-- Skill Item: Docker & Containerization -->
+                <li class="tech-progress-item">
+                  <div class="tech-meta">
+                    <span class="tech-name"><span class="tech-bullet" aria-hidden="true">▶</span> Docker &amp; Containerization</span>
+                    <span class="tech-pct">85%</span>
+                  </div>
+                  <div class="pixel-stat-bar" aria-label="Docker proficiency 85%">
+                    <div class="pixel-stat-fill" style="width: 85%;"></div>
+                  </div>
+                </li>
+
+                <!-- Skill Item: PostgreSQL & MongoDB -->
+                <li class="tech-progress-item">
+                  <div class="tech-meta">
+                    <span class="tech-name"><span class="tech-bullet" aria-hidden="true">▶</span> PostgreSQL &amp; MongoDB</span>
+                    <span class="tech-pct">88%</span>
+                  </div>
+                  <div class="pixel-stat-bar" aria-label="PostgreSQL and MongoDB proficiency 88%">
+                    <div class="pixel-stat-fill" style="width: 88%;"></div>
+                  </div>
+                </li>
+
+                <!-- Skill Item: Redis & Caching -->
+                <li class="tech-progress-item">
+                  <div class="tech-meta">
+                    <span class="tech-name"><span class="tech-bullet" aria-hidden="true">▶</span> Redis In-Memory Caching</span>
+                    <span class="tech-pct">84%</span>
+                  </div>
+                  <div class="pixel-stat-bar" aria-label="Redis proficiency 84%">
+                    <div class="pixel-stat-fill" style="width: 84%;"></div>
+                  </div>
+                </li>
+
+                <!-- Skill Item: AWS Cloud Infrastructure -->
+                <li class="tech-progress-item">
+                  <div class="tech-meta">
+                    <span class="tech-name"><span class="tech-bullet" aria-hidden="true">▶</span> AWS Cloud Basics &amp; S3 / EC2</span>
+                    <span class="tech-pct">82%</span>
+                  </div>
+                  <div class="pixel-stat-bar" aria-label="AWS proficiency 82%">
+                    <div class="pixel-stat-fill" style="width: 82%;"></div>
+                  </div>
+                </li>
+              </ul>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END SKILLS SECTION -->
+
+
+    <!-- =============================================================== -->
+    <!-- TIMELINE SECTION (Education, Major Projects & Career Milestones)-->
+    <!-- =============================================================== -->
+    <section id="timeline" class="timeline-section section-padding" aria-labelledby="timeline-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-subtitle">CHRONOLOGY // JOURNEY &amp; MILESTONES</span>
+          <h2 id="timeline-title" class="section-title">Experience, Projects &amp; Education</h2>
+          <p class="section-description">
+            A milestone journey detailing academic foundations, hands-on engineering roles, and major production deliverables.
+          </p>
+
+          <!-- Interactive Milestone Filter Pills -->
+          <div class="timeline-filters" role="tablist" aria-label="Timeline Filters">
+            <button class="timeline-filter-btn active" data-filter="all" role="tab" aria-selected="true">
+              <span class="filter-icon" aria-hidden="true">★</span> All Milestones
+            </button>
+            <button class="timeline-filter-btn" data-filter="career" role="tab" aria-selected="false">
+              <span class="filter-icon" aria-hidden="true">💼</span> Career
+            </button>
+            <button class="timeline-filter-btn" data-filter="project" role="tab" aria-selected="false">
+              <span class="filter-icon" aria-hidden="true">🚀</span> Major Projects
+            </button>
+            <button class="timeline-filter-btn" data-filter="education" role="tab" aria-selected="false">
+              <span class="filter-icon" aria-hidden="true">🎓</span> Education
+            </button>
+          </div>
+        </header>
+
+        <!-- Vertical Timeline Spine & Rounded Cards -->
+        <div class="timeline-container">
+          <div class="timeline-spine-line" aria-hidden="true"></div>
+
+          <ol class="timeline-cards-list" role="list">
+            
+            <!-- 1. Career Milestone: Software Engineer -->
+            <li class="timeline-entry" data-category="career">
+              <div class="timeline-node" aria-hidden="true">
+                <span class="node-icon">💼</span>
+              </div>
+              <article class="timeline-card rounded-box">
+                <div class="card-header-row">
+                  <div class="badge-group">
+                    <span class="timeline-type-badge career-badge">[CAREER MILESTONE]</span>
+                    <span class="timeline-status-pill">Active Role</span>
+                  </div>
+                  <time class="timeline-time-badge" datetime="2024-01">2024 &mdash; Present</time>
+                </div>
+                
+                <h3 class="timeline-role-title">Software Engineer</h3>
+                <p class="timeline-org-name">Tech Solutions Inc. &bull; Full-Stack Core Systems</p>
+                <p class="timeline-summary">
+                  Spearheading the engineering of enterprise web applications and distributed backend microservices. Led database schema optimizations that reduced API query latency by 35% while fostering best practices in automated CI/CD workflows and Agile sprint delivery.
+                </p>
+
+                <div class="timeline-footer-row">
+                  <span class="footer-label">Tech Stack:</span>
+                  <ul class="timeline-tag-list" aria-label="Technologies used">
+                    <li class="timeline-tag">React</li>
+                    <li class="timeline-tag">TypeScript</li>
+                    <li class="timeline-tag">Node.js</li>
+                    <li class="timeline-tag">Docker</li>
+                    <li class="timeline-tag">PostgreSQL</li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+
+            <!-- 2. Major Project Milestone: Cloud Analytics Platform -->
+            <li class="timeline-entry" data-category="project">
+              <div class="timeline-node" aria-hidden="true">
+                <span class="node-icon">🚀</span>
+              </div>
+              <article class="timeline-card rounded-box">
+                <div class="card-header-row">
+                  <div class="badge-group">
+                    <span class="timeline-type-badge project-badge">[MAJOR PROJECT]</span>
+                    <span class="timeline-status-pill success-pill">Production Ready</span>
+                  </div>
+                  <time class="timeline-time-badge" datetime="2023-08">2023 &mdash; 2024</time>
+                </div>
+
+                <h3 class="timeline-role-title">Real-Time Cloud Analytics Dashboard</h3>
+                <p class="timeline-org-name">High-Concurrency Telemetry Platform</p>
+                <p class="timeline-summary">
+                  Designed and deployed an end-to-end telemetry analytics dashboard processing high-frequency data streams. Implemented WebSocket subscriptions, dynamic SVG/canvas chart visualization, and role-based access control with robust security audits.
+                </p>
+
+                <div class="timeline-footer-row">
+                  <span class="footer-label">Tech Stack:</span>
+                  <ul class="timeline-tag-list" aria-label="Technologies used">
+                    <li class="timeline-tag">Next.js</li>
+                    <li class="timeline-tag">WebSockets</li>
+                    <li class="timeline-tag">Redis Pub/Sub</li>
+                    <li class="timeline-tag">Tailwind CSS</li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+
+            <!-- 3. Career Milestone: Associate Full-Stack Developer -->
+            <li class="timeline-entry" data-category="career">
+              <div class="timeline-node" aria-hidden="true">
+                <span class="node-icon">⚡</span>
+              </div>
+              <article class="timeline-card rounded-box">
+                <div class="card-header-row">
+                  <div class="badge-group">
+                    <span class="timeline-type-badge career-badge">[CAREER MILESTONE]</span>
+                  </div>
+                  <time class="timeline-time-badge" datetime="2022-06">2022 &mdash; 2023</time>
+                </div>
+
+                <h3 class="timeline-role-title">Junior Full-Stack Developer</h3>
+                <p class="timeline-org-name">NextGen Digital Studio</p>
+                <p class="timeline-summary">
+                  Engineered reusable UI components, integrated third-party RESTful APIs, and maintained code coverage above 90% using Jest and React Testing Library. Collaborated closely with UI/UX designers to guarantee cross-device performance and responsive compliance.
+                </p>
+
+                <div class="timeline-footer-row">
+                  <span class="footer-label">Tech Stack:</span>
+                  <ul class="timeline-tag-list" aria-label="Technologies used">
+                    <li class="timeline-tag">JavaScript (ES6+)</li>
+                    <li class="timeline-tag">React</li>
+                    <li class="timeline-tag">Express.js</li>
+                    <li class="timeline-tag">Jest</li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+
+            <!-- 4. Major Project Milestone: Developer CLI Utility -->
+            <li class="timeline-entry" data-category="project">
+              <div class="timeline-node" aria-hidden="true">
+                <span class="node-icon">🛠️</span>
+              </div>
+              <article class="timeline-card rounded-box">
+                <div class="card-header-row">
+                  <div class="badge-group">
+                    <span class="timeline-type-badge project-badge">[MAJOR PROJECT]</span>
+                    <span class="timeline-status-pill">Open Source</span>
+                  </div>
+                  <time class="timeline-time-badge" datetime="2022-10">2022</time>
+                </div>
+
+                <h3 class="timeline-role-title">Automated Developer CLI &amp; Container Orchestrator</h3>
+                <p class="timeline-org-name">Open-Source Developer Productivity Suite</p>
+                <p class="timeline-summary">
+                  Constructed an open-source command-line tool allowing development teams to spin up containerized microservices and automated monorepo workflows with a single terminal command. Featured custom telemetry and interactive terminal wizards.
+                </p>
+
+                <div class="timeline-footer-row">
+                  <span class="footer-label">Tech Stack:</span>
+                  <ul class="timeline-tag-list" aria-label="Technologies used">
+                    <li class="timeline-tag">Python</li>
+                    <li class="timeline-tag">Docker Compose</li>
+                    <li class="timeline-tag">Shell</li>
+                    <li class="timeline-tag">GitHub Actions</li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+
+            <!-- 5. Education Milestone: Tap Academy -->
+            <li class="timeline-entry" data-category="education">
+              <div class="timeline-node" aria-hidden="true">
+                <span class="node-icon">🎓</span>
+              </div>
+              <article class="timeline-card rounded-box">
+                <div class="card-header-row">
+                  <div class="badge-group">
+                    <span class="timeline-type-badge education-badge">[EDUCATION &amp; TRAINING]</span>
+                    <span class="timeline-status-pill">Specialization</span>
+                  </div>
+                  <time class="timeline-time-badge" datetime="2022-01">2022</time>
+                </div>
+
+                <h3 class="timeline-role-title">Full-Stack Software Development Specialization</h3>
+                <p class="timeline-org-name">Tap Academy &bull; Technical Immersion Program</p>
+                <p class="timeline-summary">
+                  Intensive specialization covering data structures and algorithms in Java and Python, relational database management, Object-Oriented design patterns, and modern full-stack web architectures. Built practical capstone applications emphasizing scalable patterns.
+                </p>
+
+                <div class="timeline-footer-row">
+                  <span class="footer-label">Key Focus:</span>
+                  <ul class="timeline-tag-list" aria-label="Skills covered">
+                    <li class="timeline-tag">Data Structures &amp; Algorithms</li>
+                    <li class="timeline-tag">Java Full Stack</li>
+                    <li class="timeline-tag">SQL</li>
+                    <li class="timeline-tag">System Design</li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+
+            <!-- 6. Education Milestone: B.Tech in Computer Science -->
+            <li class="timeline-entry" data-category="education">
+              <div class="timeline-node" aria-hidden="true">
+                <span class="node-icon">🏛️</span>
+              </div>
+              <article class="timeline-card rounded-box">
+                <div class="card-header-row">
+                  <div class="badge-group">
+                    <span class="timeline-type-badge education-badge">[DEGREE / EDUCATION]</span>
+                    <span class="timeline-status-pill">Honors / Distinction</span>
+                  </div>
+                  <time class="timeline-time-badge" datetime="2018-08">2018 &mdash; 2022</time>
+                </div>
+
+                <h3 class="timeline-role-title">B.Tech in Computer Science &amp; Engineering</h3>
+                <p class="timeline-org-name">University College of Engineering</p>
+                <p class="timeline-summary">
+                  Graduated with First Class Distinction. Academic foundation encompassing distributed operating systems, database management systems, computer networks, compiler design, and software engineering methodologies. Actively led student technical symposiums.
+                </p>
+
+                <div class="timeline-footer-row">
+                  <span class="footer-label">Core Pillars:</span>
+                  <ul class="timeline-tag-list" aria-label="Academic disciplines">
+                    <li class="timeline-tag">Operating Systems</li>
+                    <li class="timeline-tag">Computer Networks</li>
+                    <li class="timeline-tag">DBMS</li>
+                    <li class="timeline-tag">Software Architecture</li>
+                  </ul>
+                </div>
+              </article>
+            </li>
+
+          </ol>
+        </div>
+      </div>
+    </section>
+    <!-- END TIMELINE SECTION -->
+
+
+    <!-- =============================================================== -->
+    <!-- PROJECTS SECTION (Featured Production & Open Source Work)        -->
+    <!-- =============================================================== -->
+    <section id="projects" class="projects-section section-padding" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-subtitle">PORTFOLIO // PRODUCTION &amp; OPEN SOURCE</span>
+          <h2 id="projects-title" class="section-title">Featured Projects</h2>
+          <p class="section-description">
+            A showcase of full-stack web platforms, distributed systems, developer utilities, and interactive web tools engineered with modern software design principles.
+          </p>
+
+          <!-- Interactive Project Category Filters -->
+          <div class="project-filters" role="tablist" aria-label="Project Category Filters">
+            <button class="project-filter-btn active" data-filter="all" role="tab" aria-selected="true">
+              <span class="filter-icon" aria-hidden="true">★</span> All Projects <span class="filter-count">(6)</span>
+            </button>
+            <button class="project-filter-btn" data-filter="fullstack" role="tab" aria-selected="false">
+              <span class="filter-icon" aria-hidden="true">🌐</span> Full-Stack Web <span class="filter-count">(4)</span>
+            </button>
+            <button class="project-filter-btn" data-filter="systems" role="tab" aria-selected="false">
+              <span class="filter-icon" aria-hidden="true">⚡</span> Distributed Systems <span class="filter-count">(3)</span>
+            </button>
+            <button class="project-filter-btn" data-filter="devops" role="tab" aria-selected="false">
+              <span class="filter-icon" aria-hidden="true">☁</span> Cloud &amp; DevOps <span class="filter-count">(2)</span>
+            </button>
+            <button class="project-filter-btn" data-filter="tools" role="tab" aria-selected="false">
+              <span class="filter-icon" aria-hidden="true">🛠</span> Developer Tools <span class="filter-count">(3)</span>
+            </button>
+          </div>
+        </header>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-container">
+
+          <!-- ========================================================================= -->
+          <!-- 1. CloudScale Analytics Platform                                          -->
+          <!-- ========================================================================= -->
+          <article class="project-card rounded-box" data-category="fullstack systems" data-project-id="cloudscale">
+            <!-- Retro Window Chrome Bar -->
+            <div class="project-window-header">
+              <div class="window-controls" aria-hidden="true">
+                <span class="window-dot dot-close"></span>
+                <span class="window-dot dot-minimize"></span>
+                <span class="window-dot dot-expand"></span>
+              </div>
+              <span class="window-address-bar">https://cloudscale.io/telemetry</span>
+              <span class="project-status-pill status-live">
+                <span class="pulse-indicator" aria-hidden="true"></span> PROD READY
+              </span>
+            </div>
+
+            <!-- THUMBNAIL CONNECTION: Clickable Project Thumbnail for CloudScale
+                 ---------------------------------------------------------------------
+                 - Connects to: CloudScale detailed architecture view in #project-modal
+                 - Trigger Attribute: data-project="cloudscale"
+                 - Event Behavior: Clicking this thumbnail invokes openProjectModal('cloudscale')
+                   via script.js, populating the dialog with the telemetry pipeline diagram,
+                   p95 benchmark metrics, Kafka ingestion details, and live links. -->
+            <div class="project-thumbnail-wrapper">
+              <button type="button" class="project-thumbnail-btn" data-project="cloudscale" aria-haspopup="dialog" aria-label="Open detailed architecture view for CloudScale Observability Platform">
+                <div class="project-preview-frame preview-dashboard">
+                  <div class="mockup-chart-header">
+                    <div class="mockup-chart-title">
+                      <span class="metric-label">CLUSTER THROUGHPUT</span>
+                      <strong class="metric-value">42,850 ops/sec</strong>
+                    </div>
+                    <div class="mockup-chart-pills">
+                      <span class="mini-pill">p95: 14ms</span>
+                      <span class="mini-pill status-ok">HEALTHY</span>
+                    </div>
+                  </div>
+                  <!-- Simulated Chart Graphic (SVG) -->
+                  <svg class="preview-svg-chart" viewBox="0 0 360 90" preserveAspectRatio="none" aria-hidden="true">
+                    <defs>
+                      <linearGradient id="chartGrad1" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="var(--accent-primary)" stop-opacity="0.35"/>
+                        <stop offset="100%" stop-color="var(--accent-primary)" stop-opacity="0.0"/>
+                      </linearGradient>
+                    </defs>
+                    <path d="M0,75 Q30,60 60,65 T120,40 T180,50 T240,25 T300,35 T360,18 L360,90 L0,90 Z" fill="url(#chartGrad1)" />
+                    <path d="M0,75 Q30,60 60,65 T120,40 T180,50 T240,25 T300,35 T360,18" fill="none" stroke="var(--accent-primary)" stroke-width="2.5" stroke-linecap="round" />
+                    <circle cx="360" cy="18" r="4" fill="var(--accent-primary)" />
+                  </svg>
+                  <div class="mockup-stats-bar">
+                    <span><span>Trace ID:</span> #tr-9941</span>
+                    <span><span>CPU:</span> 24.3%</span>
+                    <span><span>RAM:</span> 3.1GB / 8GB</span>
+                  </div>
+                </div>
+                <!-- Thumbnail Interactive Hover Overlay -->
+                <div class="thumbnail-overlay" aria-hidden="true">
+                  <span class="thumbnail-action-pill">
+                    <span class="pill-icon">🔍</span>
+                    <span>View Architecture Details</span>
+                  </span>
+                </div>
+              </button>
+            </div>
+
+            <!-- Project Content Body -->
+            <div class="project-body">
+              <div class="card-meta-row">
+                <span class="project-type-badge">[FULL-STACK PLATFORM]</span>
+                <span class="project-year">2024</span>
+              </div>
+
+              <h3 class="project-title">CloudScale // Real-Time Observability Engine</h3>
+              
+              <p class="project-description">
+                A high-throughput distributed metrics and log aggregation platform providing microsecond query response times, interactive streaming dashboards, and automated incident anomaly detection.
+              </p>
+
+              <!-- Key Highlights -->
+              <ul class="project-feature-list" aria-label="Key engineering highlights">
+                <li class="feature-item">
+                  <span class="feature-bullet" aria-hidden="true">✦</span>
+                  <span>Reduced p95 latency to under 15ms via Redis tiered caching &amp; TimescaleDB partitioning.</span>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-bullet" aria-hidden="true">✦</span>
+                  <span>Interactive 60fps canvas visualizer streaming 100k+ concurrent metrics via WebSockets.</span>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-bullet" aria-hidden="true">✦</span>
+                  <span>Distributed tracing across Docker microservices using OpenTelemetry standards.</span>
+                </li>
+              </ul>
+
+              <!-- Tech Stack Badges -->
+              <ul class="project-tech-list" aria-label="Technologies used">
+                <li class="tech-badge">Next.js 14</li>
+                <li class="tech-badge">TypeScript</li>
+                <li class="tech-badge">Node.js</li>
+                <li class="tech-badge">Kafka</li>
+                <li class="tech-badge">PostgreSQL</li>
+                <li class="tech-badge">Redis</li>
+                <li class="tech-badge">Docker</li>
+              </ul>
+
+              <!-- Action Links -->
+              <div class="project-actions">
+                <a href="#0" class="btn btn-sm btn-primary project-action-btn" aria-label="Open live demo of CloudScale">
+                  <span>Live Demo</span> <span aria-hidden="true">↗</span>
+                </a>
+                <a href="#0" class="btn btn-sm btn-secondary project-action-btn" aria-label="View CloudScale source code on GitHub">
+                  <span>Source</span> <span aria-hidden="true">↗</span>
+                </a>
+                <button type="button" class="btn btn-sm btn-ghost project-arch-btn" data-project="cloudscale" aria-label="View architecture details for CloudScale">
+                  <span>Architecture</span> <span aria-hidden="true">ℹ️</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- ========================================================================= -->
+          <!-- 2. SyncFlow Collaborative Workspace                                       -->
+          <!-- ========================================================================= -->
+          <article class="project-card rounded-box" data-category="fullstack tools" data-project-id="syncflow">
+            <div class="project-window-header">
+              <div class="window-controls" aria-hidden="true">
+                <span class="window-dot dot-close"></span>
+                <span class="window-dot dot-minimize"></span>
+                <span class="window-dot dot-expand"></span>
+              </div>
+              <span class="window-address-bar">https://syncflow.dev/board/sprint-4</span>
+              <span class="project-status-pill status-stable">
+                <span class="pulse-indicator" aria-hidden="true"></span> v2.1 STABLE
+              </span>
+            </div>
+
+            <!-- THUMBNAIL CONNECTION: Clickable Project Thumbnail for SyncFlow
+                 ---------------------------------------------------------------------
+                 - Connects to: SyncFlow multiplayer state engine view in #project-modal
+                 - Trigger Attribute: data-project="syncflow"
+                 - Event Behavior: Clicking this thumbnail calls openProjectModal('syncflow'),
+                   loading CRDT state sync architecture diagrams, Redis Pub/Sub benchmarks,
+                   and multi-user socket replication details into the modal view. -->
+            <div class="project-thumbnail-wrapper">
+              <button type="button" class="project-thumbnail-btn" data-project="syncflow" aria-haspopup="dialog" aria-label="Open detailed architecture view for SyncFlow Workspace">
+                <div class="project-preview-frame preview-kanban">
+                  <div class="kanban-columns">
+                    <div class="kanban-col">
+                      <div class="kanban-col-header">BACKLOG (3)</div>
+                      <div class="kanban-mini-card">Auth Token Flow</div>
+                      <div class="kanban-mini-card">Kafka Consumer Lag</div>
+                    </div>
+                    <div class="kanban-col">
+                      <div class="kanban-col-header">IN PROGRESS (2)</div>
+                      <div class="kanban-mini-card active-card">
+                        <span>CRDT Synchronization</span>
+                        <span class="mini-tag">ACTIVE</span>
+                      </div>
+                      <div class="kanban-mini-card">Redis Pub/Sub Layer</div>
+                    </div>
+                    <div class="kanban-col">
+                      <div class="kanban-col-header">DONE (6)</div>
+                      <div class="kanban-mini-card done-card">Schema Migration</div>
+                    </div>
+                  </div>
+                  <div class="mockup-collaborators-bar">
+                    <div class="collab-avatars">
+                      <span class="mini-avatar av1" title="Maddi Sahasra">MS</span>
+                      <span class="mini-avatar av2" title="Alex">AL</span>
+                      <span class="mini-avatar av3" title="Riley">RI</span>
+                      <span class="collab-text">+3 active on board</span>
+                    </div>
+                    <span class="sync-badge">⚡ SYNCED</span>
+                  </div>
+                </div>
+                <!-- Thumbnail Interactive Hover Overlay -->
+                <div class="thumbnail-overlay" aria-hidden="true">
+                  <span class="thumbnail-action-pill">
+                    <span class="pill-icon">🔍</span>
+                    <span>View Architecture Details</span>
+                  </span>
+                </div>
+              </button>
+            </div>
+
+            <div class="project-body">
+              <div class="card-meta-row">
+                <span class="project-type-badge">[COLLABORATIVE WEB APP]</span>
+                <span class="project-year">2024</span>
+              </div>
+
+              <h3 class="project-title">SyncFlow // Real-Time Multiplayer Workspace</h3>
+              
+              <p class="project-description">
+                A high-concurrency collaborative workflow and task orchestrator featuring multi-user cursor tracking, optimistic updates, and conflict-free data replication.
+              </p>
+
+              <ul class="project-feature-list" aria-label="Key engineering highlights">
+                <li class="feature-item">
+                  <span class="feature-bullet" aria-hidden="true">✦</span>
+                  <span>Conflict-free Replicated Data Types (CRDTs) resolving parallel edits with 0% data collisions.</span>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-bullet" aria-hidden="true">✦</span>
+                  <span>Sub-25ms multi-tenant socket broadcasting with Go microservice backends and Redis Pub/Sub.</span>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-bullet" aria-hidden="true">✦</span>
+                  <span>Fluid drag-and-drop Kanban engine with optimistic local updates and rollback recovery.</span>
+                </li>
+              </ul>
+
+              <ul class="project-tech-list" aria-label="Technologies used">
+                <li class="tech-badge">React 18</li>
+                <li class="tech-badge">WebSockets</li>
+                <li class="tech-badge">Go</li>
+                <li class="tech-badge">Redis Pub/Sub</li>
+                <li class="tech-badge">Node.js</li>
+                <li class="tech-badge">PostgreSQL</li>
+                <li class="tech-badge">Docker</li>
+              </ul>
+
+              <div class="project-actions">
+                <a href="#0" class="btn btn-sm btn-primary project-action-btn" aria-label="Open live demo of SyncFlow">
+                  <span>Live Demo</span> <span aria-hidden="true">↗</span>
+                </a>
+                <a href="#0" class="btn btn-sm btn-secondary project-action-btn" aria-label="View SyncFlow repository on GitHub">
+                  <span>Source</span> <span aria-hidden="true">↗</span>
+                </a>
+                <button type="button" class="btn btn-sm btn-ghost project-arch-btn" data-project="syncflow" aria-label="View architecture details for SyncFlow">
+                  <span>Architecture</span> <span aria-hidden="true">ℹ️</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- ========================================================================= -->
+          <!-- 3. OrbitCLI Developer Orchestrator                                        -->
+          <!-- ========================================================================= -->
+          <article class="project-card rounded-box" data-category="devops tools" data-project-id="orbitcli">
+            <div class="project-window-header">
+              <div class="window-controls" aria-hidden="true">
+                <span class="window-dot dot-close"></span>
+                <span class="window-dot dot-minimize"></span>
+                <span class="window-dot dot-expand"></span>
+              </div>
+              <span class="window-address-bar">terminal: ~/orbit-cli --profile=prod</span>
+              <span class="project-status-pill status-stars">
+                <span aria-hidden="true">★</span> 1.4k STARS
+              </span>
+            </div>
+
+            <!-- THUMBNAIL CONNECTION: Clickable Project Thumbnail for OrbitCLI
+                 ---------------------------------------------------------------------
+                 - Connects to: OrbitCLI architecture and DAG dependency engine view
+                 - Trigger Attribute: data-project="orbitcli"
+                 - Event Behavior: Clicking this thumbnail triggers openProjectModal('orbitcli'),
+                   rendering the Directed Acyclic Graph resolver diagram, multi-region container
+                   orchestration stats, and Docker API architecture into #project-modal. -->
+            <div class="project-thumbnail-wrapper">
+              <button type="button" class="project-thumbnail-btn" data-project="orbitcli" aria-haspopup="dialog" aria-label="Open detailed architecture view for OrbitCLI">
+                <div class="project-preview-frame preview-terminal">
+                  <div class="terminal-body">
+                    <div class="term-line"><span class="term-prompt">$</span> <span class="term-cmd">orbit-cli cluster spinup --env=production</span></div>
+                    <div class="term-line term-dim">Parsing topology manifest (orbit.yaml)... [OK]</div>
+                    <div class="term-line term-success"><span class="term-symbol">✔</span> Isolated network bridge configured: 10.244.0.0/16</div>
+                    <div class="term-line term-success"><span class="term-symbol">✔</span> Redis Cluster (3 shards, 6 replicas) online</div>
+                    <div class="term-line term-success"><span class="term-symbol">✔</span> Ingress Router healthy: https://local.orbit.dev</div>
+                    <div class="term-line term-accent">✨ 8/8 services ready in 38.2s (warm cache hit)</div>
+                  </div>
+                </div>
+                <!-- Thumbnail Interactive Hover Overlay -->
+                <div class="thumbnail-overlay" aria-hidden="true">
+                  <span class="thumbnail-action-pill">
+                    <span class="pill-icon">🔍</span>
+                    <span>View Architecture Details</span>
+                  </span>
+                </div>
+              </button>
+            </div>
+
+            <div class="project-body">
+              <div class="card-meta-row">
+                <span class="project-type-badge">[DEVOPS &amp; CLI UTILITY]</span>
+                <span class="project-year">2023 &mdash; 2024</span>
+              </div>
+
+              <h3 class="project-title">OrbitCLI // Multi-Cloud Environment Orchestrator</h3>
+              
+              <p class="project-description">
+                An open-source command line tool that automates the generation and orchestration of containerized developer environments, multi-region staging clusters, and continuous delivery pipelines.
+              </p>
+
+              <ul class="project-feature-list" aria-label="Key engineering highlights">
+                <li class="feature-item">
+                  <span class="feature-bullet" aria-hidden="true">✦</span>
+                  <span>Slashed developer onboarding setup time from 45+ minutes to under 40 seconds.</span>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-bullet" aria-hidden="true">✦</span>
+                  <span>Autonomous multi-container health checks, dependency sorting, and tear-down hooks.</span>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-bullet" aria-hidden="true">✦</span>
+                  <span>Cross-platform binary compiled with Go Cobra and direct Docker Engine API integration.</span>
+                </li>
+              </ul>
+
+              <ul class="project-tech-list" aria-label="Technologies used">
+                <li class="tech-badge">Go (Golang)</li>
+                <li class="tech-badge">Docker API</li>
+                <li class="tech-badge">Kubernetes</li>
+                <li class="tech-badge">GitHub Actions</li>
+                <li class="tech-badge">Bash</li>
+                <li class="tech-badge">Linux</li>
+              </ul>
+
+              <div class="project-actions">
+                <a href="#0" class="btn btn-sm btn-primary project-action-btn" aria-label="Read documentation for OrbitCLI">
+                  <span>Docs &amp; Guide</span> <span aria-hidden="true">↗</span>
+                </a>
+                <a href="#0" class="btn btn-sm btn-secondary project-action-btn" aria-label="View OrbitCLI code on GitHub">
+                  <span>Source</span> <span aria-hidden="true">↗</span>
+                </a>
+                <button type="button" class="btn btn-sm btn-ghost project-arch-btn" data-project="orbitcli" aria-label="View architecture details for OrbitCLI">
+                  <span>Architecture</span> <span aria-hidden="true">ℹ️</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- ========================================================================= -->
+          <!-- 4. PixelForge Sprite Engine                                               -->
+          <!-- ========================================================================= -->
+          <article class="project-card rounded-box" data-category="tools fullstack" data-project-id="pixelforge">
+            <div class="project-window-header">
+              <div class="window-controls" aria-hidden="true">
+                <span class="window-dot dot-close"></span>
+                <span class="window-dot dot-minimize"></span>
+                <span class="window-dot dot-expand"></span>
+              </div>
+              <span class="window-address-bar">https://pixelforge.studio/canvas</span>
+              <span class="project-status-pill status-featured">
+                <span aria-hidden="true">👾</span> PIXEL LAB
+              </span>
+            </div>
+
+            <!-- THUMBNAIL CONNECTION: Clickable Project Thumbnail for PixelForge
+                 ---------------------------------------------------------------------
+                 - Connects to: PixelForge graphics pipeline view in #project-modal
+                 - Trigger Attribute: data-project="pixelforge"
+                 - Event Behavior: Clicking this thumbnail calls openProjectModal('pixelforge'),
+                   displaying the WebAssembly quantization pipeline, offscreen canvas buffering
+                   diagram, and hardware-accelerated 60fps sprite benchmarks. -->
+            <div class="project-thumbnail-wrapper">
+              <button type="button" class="project-thumbnail-btn" data-project="pixelforge" aria-haspopup="dialog" aria-label="Open detailed architecture view for PixelForge Studio">
+                <div class="project-preview-frame preview-pixel">
+                  <div class="pixel-canvas-mockup">
+                    <div class="pixel-grid-board" aria-hidden="true">
+                      <!-- Pixel Art Shield / Gem Icon -->
+                      <div class="retro-pixel-sprite">
+                        <div class="pixel-row"><span></span><span></span><span class="p-fill"></span><span class="p-fill"></span><span></span><span></span></div>
+                        <div class="pixel-row"><span></span><span class="p-fill"></span><span class="p-acc"></span><span class="p-acc"></span><span class="p-fill"></span><span></span></div>
+                        <div class="pixel-row"><span class="p-fill"></span><span class="p-acc"></span><span class="p-lit"></span><span class="p-lit"></span><span class="p-acc"></span><span class="p-fill"></span></div>
+                        <div class="pixel-row"><span class="p-fill"></span><span class="p-acc"></span><span class="p-lit"></span><span class="p-lit"></span><span class="p-acc"></span><span class="p-fill"></span></div>
+                        <div class="pixel-row"><span></span><span class="p-fill"></span><span class="p-acc"></span><span class="p-acc"></span><span class="p-fill"></span><span></span></div>
+                        <div class="pixel-row"><span></span><span></span><span class="p-fill"></span><span class="p-fill"></span><span></span><span></span></div>
+                      </div>
+                    </div>
+                    <div class="pixel-palette-bar">
+                      <span class="swatch s1"></span>
+                      <span class="swatch s2"></span>
+                      <span class="swatch s3"></span>
+                      <span class="swatch s4"></span>
+                      <span class="swatch s5"></span>
+                      <span class="swatch s6"></span>
+                    </div>
+                  </div>
+                  <div class="pixel-meta-strip">
+                    <span>CANVAS: 32x32px</span>
+                    <span>FRAMES: 8 / 60FPS</span>
+                    <span>FORMAT: SPRITESHEET</span>
+                  </div>
+                </div>
+                <!-- Thumbnail Interactive Hover Overlay -->
+                <div class="thumbnail-overlay" aria-hidden="true">
+                  <span class="thumbnail-action-pill">
+                    <span class="pill-icon">🔍</span>
+                    <span>View Architecture Details</span>
+                  </span>
+                </div>
+              </button>
+            </div>
+
+            <div class="project-body">
+              <div class="card-meta-row">
+                <span class="project-type-badge">[INTERACTIVE GRAPHICS TOOL]</span>
+                <span class="project-year">2024</span>
+              </div>
+
+              <h3 class="project-title">PixelForge // 8-Bit Sprite Engine &amp; Studio</h3>
+              
+              <p class="project-description">
+                A browser-based pixel art editor and animation suite built with HTML5 Canvas, WebAssembly color synthesis, and automatic game engine spritesheet exporters.
+              </p>
+
+              <ul class="project-feature-list" aria-label="Key engineering highlights">
+                <li class="feature-item">
+                  <span class="feature-bullet" aria-hidden="true">✦</span>
+                  <span>Zero-latency 60fps canvas rasterization with layers, onion skinning, and symmetry mirrors.</span>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-bullet" aria-hidden="true">✦</span>
+                  <span>Retro color quantization algorithms matching NES, Game Boy, and custom 16-color palettes.</span>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-bullet" aria-hidden="true">✦</span>
+                  <span>Direct export to optimized PNG spritesheets, animated GIFs, and Phaser/Unity JSON atlases.</span>
+                </li>
+              </ul>
+
+              <ul class="project-tech-list" aria-label="Technologies used">
+                <li class="tech-badge">TypeScript</li>
+                <li class="tech-badge">HTML5 Canvas</li>
+                <li class="tech-badge">WebAssembly</li>
+                <li class="tech-badge">CSS Grid</li>
+                <li class="tech-badge">Vite</li>
+              </ul>
+
+              <div class="project-actions">
+                <a href="#0" class="btn btn-sm btn-primary project-action-btn" aria-label="Open PixelForge Studio">
+                  <span>Open Studio</span> <span aria-hidden="true">↗</span>
+                </a>
+                <a href="#0" class="btn btn-sm btn-secondary project-action-btn" aria-label="View PixelForge repository on GitHub">
+                  <span>Source</span> <span aria-hidden="true">↗</span>
+                </a>
+                <button type="button" class="btn btn-sm btn-ghost project-arch-btn" data-project="pixelforge" aria-label="View architecture details for PixelForge">
+                  <span>Architecture</span> <span aria-hidden="true">ℹ️</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- ========================================================================= -->
+          <!-- 5. TapLearn LMS & Sandboxed Evaluator                                     -->
+          <!-- ========================================================================= -->
+          <article class="project-card rounded-box" data-category="fullstack systems" data-project-id="taplearn">
+            <div class="project-window-header">
+              <div class="window-controls" aria-hidden="true">
+                <span class="window-dot dot-close"></span>
+                <span class="window-dot dot-minimize"></span>
+                <span class="window-dot dot-expand"></span>
+              </div>
+              <span class="window-address-bar">https://taplearn.portal/evaluate/course-101</span>
+              <span class="project-status-pill status-edu">
+                <span aria-hidden="true">🎓</span> ENTERPRISE LMS
+              </span>
+            </div>
+
+            <!-- THUMBNAIL CONNECTION: Clickable Project Thumbnail for TapLearn
+                 ---------------------------------------------------------------------
+                 - Connects to: TapLearn containerized security sandbox view in #project-modal
+                 - Trigger Attribute: data-project="taplearn"
+                 - Event Behavior: Clicking this thumbnail triggers openProjectModal('taplearn'),
+                   presenting the Linux cgroup sandbox diagram, evaluation queue workflows,
+                   and JUnit test runner architecture into #project-modal. -->
+            <div class="project-thumbnail-wrapper">
+              <button type="button" class="project-thumbnail-btn" data-project="taplearn" aria-haspopup="dialog" aria-label="Open detailed architecture view for TapLearn Sandbox Evaluator">
+                <div class="project-preview-frame preview-code">
+                  <div class="code-editor-chrome">
+                    <div class="code-editor-tabs">
+                      <span class="editor-tab active-tab">Solution.java</span>
+                      <span class="editor-tab">TestCaseTest.java</span>
+                    </div>
+                    <div class="code-lines-display">
+                      <div class="code-line"><span class="line-num">1</span> <span class="c-kwd">public class</span> <span class="c-cls">GraphOptimizer</span> {</div>
+                      <div class="code-line"><span class="line-num">2</span> &nbsp;&nbsp;<span class="c-kwd">public</span> <span class="c-typ">int</span> <span class="c-fn">shortestPath</span>(<span class="c-typ">Node</span> src, <span class="c-typ">Node</span> dest) {</div>
+                      <div class="code-line"><span class="line-num">3</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="c-kwd">return</span> dijkstraRouter.compute(src, dest);</div>
+                      <div class="code-line"><span class="line-num">4</span> &nbsp;&nbsp;}</div>
+                      <div class="code-line"><span class="line-num">5</span> }</div>
+                    </div>
+                  </div>
+                  <div class="code-eval-result">
+                    <span class="result-badge"><span aria-hidden="true">✔</span> 12/12 TESTS PASSED</span>
+                    <span class="result-runtime">EXEC: 0.041s | MEM: 18.2MB</span>
+                  </div>
+                </div>
+                <!-- Thumbnail Interactive Hover Overlay -->
+                <div class="thumbnail-overlay" aria-hidden="true">
+                  <span class="thumbnail-action-pill">
+                    <span class="pill-icon">🔍</span>
+                    <span>View Architecture Details</span>
+                  </span>
+                </div>
+              </button>
+            </div>
+
+            <div class="project-body">
+              <div class="card-meta-row">
+                <span class="project-type-badge">[EDTECH &amp; CODE EVALUATOR]</span>
+                <span class="project-year">2023</span>
+              </div>
+
+              <h3 class="project-title">TapLearn // Sandboxed Automated Code Evaluator</h3>
+              
+              <p class="project-description">
+                A full-stack learning management platform and automated grading sandbox that executes student programs safely in isolated Docker containers with automated test asserting.
+              </p>
+
+              <ul class="project-feature-list" aria-label="Key engineering highlights">
+                <li class="feature-item">
+                  <span class="feature-bullet" aria-hidden="true">✦</span>
+                  <span>Isolated Linux cgroup container sandbox preventing unauthorized host filesystem access.</span>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-bullet" aria-hidden="true">✦</span>
+                  <span>Automated test harness supporting Java, Python, and SQL with detailed memory profiling.</span>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-bullet" aria-hidden="true">✦</span>
+                  <span>Role-based portal with instructor analytics, gradebook exports, and course progress curves.</span>
+                </li>
+              </ul>
+
+              <ul class="project-tech-list" aria-label="Technologies used">
+                <li class="tech-badge">Java 17</li>
+                <li class="tech-badge">Spring Boot</li>
+                <li class="tech-badge">React</li>
+                <li class="tech-badge">MySQL</li>
+                <li class="tech-badge">Docker Sandboxing</li>
+                <li class="tech-badge">RESTful APIs</li>
+              </ul>
+
+              <div class="project-actions">
+                <a href="#0" class="btn btn-sm btn-primary project-action-btn" aria-label="Open TapLearn portal demo">
+                  <span>Portal Demo</span> <span aria-hidden="true">↗</span>
+                </a>
+                <a href="#0" class="btn btn-sm btn-secondary project-action-btn" aria-label="View TapLearn code on GitHub">
+                  <span>Source</span> <span aria-hidden="true">↗</span>
+                </a>
+                <button type="button" class="btn btn-sm btn-ghost project-arch-btn" data-project="taplearn" aria-label="View architecture details for TapLearn">
+                  <span>Architecture</span> <span aria-hidden="true">ℹ️</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- ========================================================================= -->
+          <!-- 6. AuraGateway Micro-Payment Gateway                                      -->
+          <!-- ========================================================================= -->
+          <article class="project-card rounded-box" data-category="systems devops" data-project-id="auragateway">
+            <div class="project-window-header">
+              <div class="window-controls" aria-hidden="true">
+                <span class="window-dot dot-close"></span>
+                <span class="window-dot dot-minimize"></span>
+                <span class="window-dot dot-expand"></span>
+              </div>
+              <span class="window-address-bar">https://api.auragateway.net/v1/health</span>
+              <span class="project-status-pill status-sla">
+                <span aria-hidden="true">⚡</span> 99.99% SLA
+              </span>
+            </div>
+
+            <!-- THUMBNAIL CONNECTION: Clickable Project Thumbnail for AuraGateway
+                 ---------------------------------------------------------------------
+                 - Connects to: AuraGateway distributed payment engine view in #project-modal
+                 - Trigger Attribute: data-project="auragateway"
+                 - Event Behavior: Clicking this thumbnail invokes openProjectModal('auragateway'),
+                   rendering the idempotency lock sequence diagram, Redis caching layer specs,
+                   and webhook DLQ retry pattern details into #project-modal. -->
+            <div class="project-thumbnail-wrapper">
+              <button type="button" class="project-thumbnail-btn" data-project="auragateway" aria-haspopup="dialog" aria-label="Open detailed architecture view for AuraGateway Payment Engine">
+                <div class="project-preview-frame preview-topology">
+                  <div class="topology-grid">
+                    <div class="topo-node topo-gateway">
+                      <span class="topo-icon">🛡</span>
+                      <span class="topo-name">API Gateway</span>
+                      <span class="topo-sub">Rate Limiter</span>
+                    </div>
+                    <div class="topo-arrow">&rarr;</div>
+                    <div class="topo-node topo-cache">
+                      <span class="topo-icon">⚡</span>
+                      <span class="topo-name">Idempotency</span>
+                      <span class="topo-sub">Redis Lock</span>
+                    </div>
+                    <div class="topo-arrow">&rarr;</div>
+                    <div class="topo-node topo-ledger">
+                      <span class="topo-icon">💾</span>
+                      <span class="topo-name">Ledger DB</span>
+                      <span class="topo-sub">PostgreSQL</span>
+                    </div>
+                  </div>
+                  <div class="mockup-topology-metrics">
+                    <span><span>Peak TPS:</span> 20,400 req/s</span>
+                    <span><span>Circuit Breaker:</span> CLOSED (Healthy)</span>
+                    <span><span>Deduplication:</span> 100%</span>
+                  </div>
+                </div>
+                <!-- Thumbnail Interactive Hover Overlay -->
+                <div class="thumbnail-overlay" aria-hidden="true">
+                  <span class="thumbnail-action-pill">
+                    <span class="pill-icon">🔍</span>
+                    <span>View Architecture Details</span>
+                  </span>
+                </div>
+              </button>
+            </div>
+
+            <div class="project-body">
+              <div class="card-meta-row">
+                <span class="project-type-badge">[DISTRIBUTED FINTECH API]</span>
+                <span class="project-year">2023</span>
+              </div>
+
+              <h3 class="project-title">AuraGateway // High-Throughput Payment Engine</h3>
+              
+              <p class="project-description">
+                A mission-critical payment ingestion and webhook reconciliation microservice with guaranteed idempotency, distributed rate limiting, and zero-drop transactional queuing.
+              </p>
+
+              <ul class="project-feature-list" aria-label="Key engineering highlights">
+                <li class="feature-item">
+                  <span class="feature-bullet" aria-hidden="true">✦</span>
+                  <span>Handled 20,000+ simulated requests/sec with Redis distributed locks preventing duplicate charges.</span>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-bullet" aria-hidden="true">✦</span>
+                  <span>Automated webhook reconciliation with exponential backoff and dead-letter queues (DLQ).</span>
+                </li>
+                <li class="feature-item">
+                  <span class="feature-bullet" aria-hidden="true">✦</span>
+                  <span>AES-256 encrypted payload signatures with end-to-end cryptographic audit trails.</span>
+                </li>
+              </ul>
+
+              <ul class="project-tech-list" aria-label="Technologies used">
+                <li class="tech-badge">Python</li>
+                <li class="tech-badge">FastAPI</li>
+                <li class="tech-badge">PostgreSQL</li>
+                <li class="tech-badge">Redis</li>
+                <li class="tech-badge">Stripe API</li>
+                <li class="tech-badge">Docker</li>
+              </ul>
+
+              <div class="project-actions">
+                <a href="#0" class="btn btn-sm btn-primary project-action-btn" aria-label="View API specs for AuraGateway">
+                  <span>API Specs</span> <span aria-hidden="true">↗</span>
+                </a>
+                <a href="#0" class="btn btn-sm btn-secondary project-action-btn" aria-label="View AuraGateway repository on GitHub">
+                  <span>Source</span> <span aria-hidden="true">↗</span>
+                </a>
+                <button type="button" class="btn btn-sm btn-ghost project-arch-btn" data-project="auragateway" aria-label="View architecture details for AuraGateway">
+                  <span>Architecture</span> <span aria-hidden="true">ℹ️</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+    <!-- END PROJECTS SECTION -->
+
+    <!-- =============================================================== -->
+    <!-- INTERACTIVE ARCHITECTURE & CASE STUDY MODAL                     -->
+    <!-- =============================================================== -->
+    <div id="project-modal" class="project-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-project-title" hidden>
+      <div class="project-modal-dialog rounded-box">
+        <div class="modal-header">
+          <div class="modal-title-wrap">
+            <span id="modal-project-badge" class="project-type-badge">[ARCHITECTURE BRIEF]</span>
+            <h3 id="modal-project-title" class="modal-heading">Project Architecture</h3>
+          </div>
+          <button type="button" id="modal-close-btn" class="modal-close-btn" aria-label="Close project architecture dialog">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="modal-summary-box">
+            <h4 class="modal-subheading">System Architecture &amp; Engineering Decisions</h4>
+            <p id="modal-project-desc" class="modal-desc-text">Detailed architectural walkthrough.</p>
+          </div>
+
+          <div class="modal-diagram-box">
+            <div class="modal-diagram-header">
+              <span class="diagram-tag">TOPOLOGY &amp; DATA FLOW PIPELINE</span>
+            </div>
+            <pre id="modal-project-diagram" class="modal-ascii-diagram"><code><!-- Populated via JavaScript --></code></pre>
+          </div>
+
+          <div class="modal-highlights-box">
+            <h4 class="modal-subheading">Key Technical Highlights &amp; Metrics</h4>
+            <ul id="modal-project-highlights" class="modal-highlights-list">
+              <!-- Populated via JavaScript -->
+            </ul>
+          </div>
+
+          <div class="modal-tech-box">
+            <h4 class="modal-subheading">Technologies &amp; Libraries</h4>
+            <ul id="modal-project-tech" class="project-tech-list">
+              <!-- Populated via JavaScript -->
+            </ul>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <div class="modal-links-row">
+            <a id="modal-live-link" href="#0" class="btn btn-sm btn-primary">
+              <span>View Live Demo</span> <span aria-hidden="true">↗</span>
+            </a>
+            <a id="modal-source-link" href="#0" class="btn btn-sm btn-secondary">
+              <span>Inspect Source Code</span> <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+          <button type="button" id="modal-dismiss-btn" class="btn btn-sm btn-ghost">Close Brief</button>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- =============================================================== -->
+    <!-- PORTFOLIO HIGHLIGHT / VIDEO INTRODUCTION SECTION                -->
+    <!-- =============================================================== -->
+    <section id="video-highlight" class="video-section section-padding" aria-labelledby="video-highlight-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-subtitle">FEATURED STREAM // BROADCAST REEL</span>
+          <h2 id="video-highlight-title" class="section-title">Portfolio Highlight &amp; Walkthrough</h2>
+          <p class="section-description">
+            An engineering deep-dive introducing software engineering philosophy, full-stack microservices architecture, and real-time interactive systems.
+          </p>
+        </header>
+
+        <!-- Retro 8-Bit Monitor & Video Player Chassis -->
+        <div class="retro-video-console rounded-box">
+          
+          <!-- Monitor Top Bezel Bar -->
+          <div class="console-bezel-top">
+            <div class="bezel-brand">
+              <span class="bezel-brand-icon" aria-hidden="true">📼</span>
+              <span class="bezel-brand-text">RETRO-VISION // ARCHIVE TAPE #01</span>
+            </div>
+            <div class="bezel-status-group">
+              <span class="video-live-pill">
+                <span class="pulse-indicator" aria-hidden="true"></span>
+                <span>REC 1080p 60FPS</span>
+              </span>
+              <span class="bezel-channel-tag">[CH 01: INTRO]</span>
+            </div>
+          </div>
+
+          <!-- Video Screen Frame with CRT Scanlines Effect -->
+          <div class="console-screen-housing" id="screen-housing">
+            <!-- Scanline Overlay for authentic 8-bit CRT aesthetic -->
+            <div class="crt-scanlines" id="crt-scanlines-layer" aria-hidden="true"></div>
+            <div class="crt-corner-glare" aria-hidden="true"></div>
+
+            <!-- Responsive Video Embed Container (Using CSS aspect-ratio: 16 / 9) -->
+            <div class="video-embed-container">
+              <iframe
+                id="portfolio-youtube-video"
+                class="responsive-youtube-iframe"
+                src="https://www.youtube-nocookie.com/embed/aircAruvnKk?rel=0&amp;modestbranding=1"
+                title="Maddi Sahasra - Software Engineer Portfolio Walkthrough and Architecture Highlight"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+
+          <!-- Monitor Bottom Control Deck -->
+          <div class="console-control-deck">
+            <div class="deck-knob-cluster" role="group" aria-label="Console Channel Controls">
+              <span class="deck-label">CHANNEL SELECT:</span>
+              <button type="button" class="channel-btn active" data-channel="intro" aria-pressed="true">
+                <span>01</span> INTRO
+              </button>
+              <button type="button" class="channel-btn" data-channel="architecture" aria-pressed="false">
+                <span>02</span> ARCH
+              </button>
+              <button type="button" class="channel-btn" data-channel="systems" aria-pressed="false">
+                <span>03</span> SYS
+              </button>
+            </div>
+
+            <div class="deck-signal-indicators">
+              <div class="signal-meter" title="Signal Strength: Optimal" aria-hidden="true">
+                <span class="meter-bar active"></span>
+                <span class="meter-bar active"></span>
+                <span class="meter-bar active"></span>
+                <span class="meter-bar active"></span>
+                <span class="meter-bar"></span>
+                <span class="meter-text">SIG: 94%</span>
+              </div>
+              <button type="button" id="scanline-toggle-btn" class="pixel-utility-btn" title="Toggle CRT scanline raster effect">
+                <span class="btn-icon" aria-hidden="true">📺</span>
+                <span id="scanline-btn-text">CRT FX: ON</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Video Explanatory Caption Card -->
+          <figcaption class="video-caption-box">
+            <div class="caption-header-row">
+              <div class="caption-badge-wrap">
+                <span class="caption-type-badge">[VIDEO WALKTHROUGH]</span>
+                <time class="caption-time-stamp" datetime="PT12M30S">12:30 RUNTIME</time>
+              </div>
+              <span class="caption-speaker"><span aria-hidden="true">🎙️</span> Presenter: Maddi Sahasra</span>
+            </div>
+
+            <h3 id="video-caption-heading" class="caption-title">Engineering Philosophy, Distributed Pipelines &amp; Architecture Walkthrough</h3>
+
+            <p id="video-caption-body" class="caption-body">
+              This portfolio highlight provides a detailed walkthrough of Maddi Sahasra’s engineering journey and distributed system architectures. In this session, Sahasra demonstrates real-time observability telemetry streaming through Apache Kafka and Redis (CloudScale), multiplayer state synchronization using CRDTs (SyncFlow), and automated container isolation sandboxes (TapLearn). The presentation emphasizes microservice resilience, low-latency querying, and pixel-precise, accessible frontend design.
+            </p>
+
+            <!-- Video Key Topics & Chapters -->
+            <div class="caption-chapters-row">
+              <span class="chapters-label">Chapters:</span>
+              <ul class="chapters-list" aria-label="Video key chapters">
+                <li class="chapter-pill"><span class="ch-time">00:00</span> Intro &amp; Full-Stack Core</li>
+                <li class="chapter-pill"><span class="ch-time">02:15</span> CloudScale Telemetry Stream</li>
+                <li class="chapter-pill"><span class="ch-time">05:40</span> SyncFlow Multiplayer CRDTs</li>
+                <li class="chapter-pill"><span class="ch-time">08:55</span> Automated CI/CD &amp; Testing</li>
+                <li class="chapter-pill"><span class="ch-time">11:10</span> Key Architectural Takeaways</li>
+              </ul>
+            </div>
+          </figcaption>
+
+        </div>
+      </div>
+    </section>
+    <!-- END PORTFOLIO HIGHLIGHT / VIDEO INTRODUCTION SECTION -->
+
+
+    <!-- =============================================================== -->
+    <!-- TESTIMONIALS SECTION (Client & Peer Endorsements)                -->
+    <!-- =============================================================== -->
+    <section id="testimonials" class="testimonials-section section-padding" aria-labelledby="testimonials-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-subtitle">RECOMMENDATIONS // REPUTATION &amp; TRUST</span>
+          <h2 id="testimonials-title" class="section-title">Client &amp; Peer Endorsements</h2>
+          <p class="section-description">
+            Unsolicited feedback, sprint reflections, and peer recommendations from engineering directors, staff tech leads, product managers, and open-source collaborators.
+          </p>
+
+          <!-- Interactive Testimonial Filter Pills -->
+          <div class="testimonial-filters" role="tablist" aria-label="Testimonial category filters">
+            <button class="testimonial-filter-btn active" data-filter="all" role="tab" aria-selected="true">
+              <span class="filter-icon" aria-hidden="true">★</span> All Endorsements <span class="filter-count">(6)</span>
+            </button>
+            <button class="testimonial-filter-btn" data-filter="leads" role="tab" aria-selected="false">
+              <span class="filter-icon" aria-hidden="true">💼</span> Engineering Leads <span class="filter-count">(2)</span>
+            </button>
+            <button class="testimonial-filter-btn" data-filter="peers" role="tab" aria-selected="false">
+              <span class="filter-icon" aria-hidden="true">👾</span> Peers &amp; Devs <span class="filter-count">(2)</span>
+            </button>
+            <button class="testimonial-filter-btn" data-filter="product" role="tab" aria-selected="false">
+              <span class="filter-icon" aria-hidden="true">🚀</span> Product &amp; Clients <span class="filter-count">(2)</span>
+            </button>
+          </div>
+        </header>
+
+        <div class="testimonials-grid" id="testimonials-container">
+          
+          <!-- Testimonial 1: VP of Engineering -->
+          <article class="testimonial-card rounded-box" data-category="leads">
+            <div class="testimonial-card-header">
+              <div class="testimonial-badge-group">
+                <span class="testimonial-type-badge lead-badge">[ENGINEERING DIRECTOR]</span>
+                <span class="testimonial-context-tag">Tech Solutions Inc.</span>
+              </div>
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                <span class="star-glyph">★★★★★</span>
+                <span class="star-rating-num">5.0</span>
+              </div>
+            </div>
+
+            <div class="quote-decorative-mark" aria-hidden="true">&ldquo;</div>
+
+            <blockquote class="testimonial-quote">
+              Maddi is an exceptional software engineer whose architectural rigor fundamentally leveled up our distributed services. She overhauled our database querying patterns, cutting API response times by 35%, and consistently championed clean, maintainable TypeScript standards across multiple high-velocity sprints.
+            </blockquote>
+
+            <div class="testimonial-card-footer">
+              <div class="endorsement-pill">
+                <span class="pill-bullet" aria-hidden="true">✦</span>
+                <span>Distributed Systems &amp; Query Optimization</span>
+              </div>
+              <footer class="testimonial-author">
+                <div class="author-avatar avatar-purple" aria-hidden="true">
+                  <span>AM</span>
+                </div>
+                <div class="author-info">
+                  <div class="author-name-row">
+                    <strong class="author-name">Alex Morgan</strong>
+                    <span class="verified-badge" title="Verified Colleague" aria-label="Verified colleague">✓</span>
+                  </div>
+                  <span class="author-role">VP of Engineering &bull; Tech Solutions Inc.</span>
+                </div>
+              </footer>
+            </div>
+          </article>
+
+          <!-- Testimonial 2: Principal Architect & Mentor -->
+          <article class="testimonial-card rounded-box" data-category="leads">
+            <div class="testimonial-card-header">
+              <div class="testimonial-badge-group">
+                <span class="testimonial-type-badge mentor-badge">[TECH LEAD &amp; MENTOR]</span>
+                <span class="testimonial-context-tag">Tap Academy Specialization</span>
+              </div>
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                <span class="star-glyph">★★★★★</span>
+                <span class="star-rating-num">5.0</span>
+              </div>
+            </div>
+
+            <div class="quote-decorative-mark" aria-hidden="true">&ldquo;</div>
+
+            <blockquote class="testimonial-quote">
+              Few engineers combine conceptual computer science depth with raw execution speed quite like Sahasra. Her work engineering the TapLearn sandboxed code evaluator was flawless&mdash;delivering rock-solid Linux container isolation without sacrificing sub-50ms test execution latency.
+            </blockquote>
+
+            <div class="testimonial-card-footer">
+              <div class="endorsement-pill">
+                <span class="pill-bullet" aria-hidden="true">✦</span>
+                <span>Secure Docker Sandboxing &amp; Architecture</span>
+              </div>
+              <footer class="testimonial-author">
+                <div class="author-avatar avatar-amber" aria-hidden="true">
+                  <span>MV</span>
+                </div>
+                <div class="author-info">
+                  <div class="author-name-row">
+                    <strong class="author-name">Marcus Vance</strong>
+                    <span class="verified-badge" title="Verified Colleague" aria-label="Verified colleague">✓</span>
+                  </div>
+                  <span class="author-role">Principal Software Architect &bull; Tap Academy</span>
+                </div>
+              </footer>
+            </div>
+          </article>
+
+          <!-- Testimonial 3: Senior Peer Engineer -->
+          <article class="testimonial-card rounded-box" data-category="peers">
+            <div class="testimonial-card-header">
+              <div class="testimonial-badge-group">
+                <span class="testimonial-type-badge peer-badge">[SENIOR PEER]</span>
+                <span class="testimonial-context-tag">SyncFlow Multiplayer</span>
+              </div>
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                <span class="star-glyph">★★★★★</span>
+                <span class="star-rating-num">5.0</span>
+              </div>
+            </div>
+
+            <div class="quote-decorative-mark" aria-hidden="true">&ldquo;</div>
+
+            <blockquote class="testimonial-quote">
+              Pair programming with Sahasra on SyncFlow was a masterclass in collaboration. Her mastery of WebSockets and CRDT synchronization resolved our thorniest multi-tenant state collisions. She communicates with crystal clarity and always leaves code cleaner than she found it.
+            </blockquote>
+
+            <div class="testimonial-card-footer">
+              <div class="endorsement-pill">
+                <span class="pill-bullet" aria-hidden="true">✦</span>
+                <span>Multiplayer WebSockets &amp; CRDT Sync</span>
+              </div>
+              <footer class="testimonial-author">
+                <div class="author-avatar avatar-emerald" aria-hidden="true">
+                  <span>ER</span>
+                </div>
+                <div class="author-info">
+                  <div class="author-name-row">
+                    <strong class="author-name">Elena Rostova</strong>
+                    <span class="verified-badge" title="Verified Colleague" aria-label="Verified colleague">✓</span>
+                  </div>
+                  <span class="author-role">Senior Full-Stack Engineer &bull; NextGen Digital</span>
+                </div>
+              </footer>
+            </div>
+          </article>
+
+          <!-- Testimonial 4: Open Source Maintainer -->
+          <article class="testimonial-card rounded-box" data-category="peers">
+            <div class="testimonial-card-header">
+              <div class="testimonial-badge-group">
+                <span class="testimonial-type-badge oss-badge">[OPEN SOURCE MAINTAINER]</span>
+                <span class="testimonial-context-tag">OrbitCLI Tooling</span>
+              </div>
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                <span class="star-glyph">★★★★★</span>
+                <span class="star-rating-num">5.0</span>
+              </div>
+            </div>
+
+            <div class="quote-decorative-mark" aria-hidden="true">&ldquo;</div>
+
+            <blockquote class="testimonial-quote">
+              Sahasra’s contributions to our developer tooling ecosystem have been invaluable. The container dependency graph resolution she architected for OrbitCLI trimmed local developer bootstrap times from 45 minutes to under 40 seconds. A phenomenal software craftsman.
+            </blockquote>
+
+            <div class="testimonial-card-footer">
+              <div class="endorsement-pill">
+                <span class="pill-bullet" aria-hidden="true">✦</span>
+                <span>Go CLI Systems &amp; Container Orchestration</span>
+              </div>
+              <footer class="testimonial-author">
+                <div class="author-avatar avatar-blue" aria-hidden="true">
+                  <span>DB</span>
+                </div>
+                <div class="author-info">
+                  <div class="author-name-row">
+                    <strong class="author-name">Devon Brooks</strong>
+                    <span class="verified-badge" title="Verified Colleague" aria-label="Verified colleague">✓</span>
+                  </div>
+                  <span class="author-role">Staff DevOps Lead &bull; Orbit Ecosystem</span>
+                </div>
+              </footer>
+            </div>
+          </article>
+
+          <!-- Testimonial 5: Head of Product -->
+          <article class="testimonial-card rounded-box" data-category="product">
+            <div class="testimonial-card-header">
+              <div class="testimonial-badge-group">
+                <span class="testimonial-type-badge product-badge">[PRODUCT LEAD]</span>
+                <span class="testimonial-context-tag">CloudScale Analytics</span>
+              </div>
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                <span class="star-glyph">★★★★★</span>
+                <span class="star-rating-num">5.0</span>
+              </div>
+            </div>
+
+            <div class="quote-decorative-mark" aria-hidden="true">&ldquo;</div>
+
+            <blockquote class="testimonial-quote">
+              What sets Maddi apart is her rare empathy for user experience combined with backend muscle. She didn’t just build our high-throughput Kafka telemetry pipeline; she made the live analytics dashboard feel instantaneous, silky smooth, and intuitive for our enterprise customers.
+            </blockquote>
+
+            <div class="testimonial-card-footer">
+              <div class="endorsement-pill">
+                <span class="pill-bullet" aria-hidden="true">✦</span>
+                <span>Product Empathy &amp; 60fps UX Engineering</span>
+              </div>
+              <footer class="testimonial-author">
+                <div class="author-avatar avatar-rose" aria-hidden="true">
+                  <span>SC</span>
+                </div>
+                <div class="author-info">
+                  <div class="author-name-row">
+                    <strong class="author-name">Sarah Chen</strong>
+                    <span class="verified-badge" title="Verified Colleague" aria-label="Verified colleague">✓</span>
+                  </div>
+                  <span class="author-role">Head of Product &bull; CloudScale Analytics</span>
+                </div>
+              </footer>
+            </div>
+          </article>
+
+          <!-- Testimonial 6: Client Partner / Founder -->
+          <article class="testimonial-card rounded-box" data-category="product">
+            <div class="testimonial-card-header">
+              <div class="testimonial-badge-group">
+                <span class="testimonial-type-badge client-badge">[CLIENT PARTNER]</span>
+                <span class="testimonial-context-tag">AuraGateway Integration</span>
+              </div>
+              <div class="testimonial-stars" aria-label="5 out of 5 stars">
+                <span class="star-glyph">★★★★★</span>
+                <span class="star-rating-num">5.0</span>
+              </div>
+            </div>
+
+            <div class="quote-decorative-mark" aria-hidden="true">&ldquo;</div>
+
+            <blockquote class="testimonial-quote">
+              We entrusted Maddi with our core payment webhook ingestion gateway, and the outcome exceeded our strictest SLA targets. Her idempotent Redis lock implementation handled over 20,000 req/sec during stress tests with zero dropped events and zero duplicate charges.
+            </blockquote>
+
+            <div class="testimonial-card-footer">
+              <div class="endorsement-pill">
+                <span class="pill-bullet" aria-hidden="true">✦</span>
+                <span>FinTech SLA Integrity &amp; Idempotency</span>
+              </div>
+              <footer class="testimonial-author">
+                <div class="author-avatar avatar-indigo" aria-hidden="true">
+                  <span>DK</span>
+                </div>
+                <div class="author-info">
+                  <div class="author-name-row">
+                    <strong class="author-name">David Kalu</strong>
+                    <span class="verified-badge" title="Verified Colleague" aria-label="Verified colleague">✓</span>
+                  </div>
+                  <span class="author-role">Founder &amp; CTO &bull; Aura Payments Lab</span>
+                </div>
+              </footer>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+    <!-- END TESTIMONIALS SECTION -->
+
+
+    <!-- =============================================================== -->
+    <!-- =============================================================== -->
+    <!-- INTERACTIVE AI DIGITAL TWIN CHAT SECTION                        -->
+    <!-- =============================================================== -->
+    <section id="chat" class="chat-section section-padding" aria-labelledby="chat-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-subtitle">NEURAL INTERFACE // DIGITAL TWIN</span>
+          <h2 id="chat-title" class="section-title">Chat with Sahasra AI</h2>
+          <p class="section-description">
+            Interact with an AI version of Maddi Sahasra. Ask about architectural design decisions, full-stack technologies, project case studies, and engineering availability.
+          </p>
+        </header>
+
+        <!-- Chat Window Console (Rounded Box & Drop Shadow) -->
+        <div class="chat-window rounded-box">
+          
+          <!-- Window Header Bar with AI Persona & Status -->
+          <div class="chat-window-header">
+            <div class="window-controls" aria-hidden="true">
+              <span class="window-dot dot-close"></span>
+              <span class="window-dot dot-minimize"></span>
+              <span class="window-dot dot-expand"></span>
+            </div>
+
+            <div class="chat-persona-meta">
+              <div class="persona-avatar-frame">
+                <img src="867f567d-8d0c-4471-8dfa-48e20be7da65.png" alt="Maddi Sahasra Avatar" class="persona-avatar-img">
+                <span class="persona-online-dot" aria-hidden="true"></span>
+              </div>
+              <div class="persona-text">
+                <div class="persona-name-row">
+                  <strong class="persona-name">Maddi Sahasra (AI Twin)</strong>
+                  <span class="chat-model-tag">[v2.4 SIMULATED LLM]</span>
+                </div>
+                <span class="persona-status-text">
+                  <span class="status-pulse-dot" aria-hidden="true"></span>
+                  <span>Online &bull; Trained on Technical Portfolio &amp; Projects</span>
+                </span>
+              </div>
+            </div>
+
+            <div class="chat-header-actions">
+              <button type="button" id="clear-chat-btn" class="chat-tool-btn" title="Clear chat history and restart conversation" aria-label="Reset chat history">
+                <span class="tool-icon" aria-hidden="true">↺</span>
+                <span>Reset</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Chat Messages Display Area -->
+          <div class="chat-messages" id="chat-messages" role="log" aria-live="polite" aria-relevant="additions text">
+            <!-- Initial Greeting from AI Twin -->
+            <div class="chat-message-row bot-row">
+              <div class="message-avatar" aria-hidden="true">
+                <img src="867f567d-8d0c-4471-8dfa-48e20be7da65.png" alt="" class="avatar-small">
+              </div>
+              <div class="chat-bubble bot-bubble">
+                <div class="bubble-header">
+                  <span class="bubble-sender-name">Maddi Sahasra (AI)</span>
+                  <span class="bubble-timestamp">Just now</span>
+                </div>
+                <div class="bubble-text">
+                  Hello! I'm Maddi Sahasra's AI digital twin. 👋 I'm trained on her engineering background, full-stack systems, and portfolio architecture.
+                  <br><br>
+                  Feel free to ask me about my <strong>tech stack</strong>, dive into projects like <strong>CloudScale</strong> or <strong>SyncFlow</strong>, or inquire about full-time software engineering roles!
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Suggestion Prompt Chips -->
+          <div class="chat-suggestions-strip" role="group" aria-label="Suggested questions">
+            <span class="suggestions-label">SUGGESTED:</span>
+            <div class="suggestions-scroller">
+              <button type="button" class="suggestion-chip" data-prompt="What core technical stack and languages do you specialize in?">
+                💻 Core Tech Stack
+              </button>
+              <button type="button" class="suggestion-chip" data-prompt="Tell me about your featured projects like CloudScale and SyncFlow.">
+                🚀 Featured Projects
+              </button>
+              <button type="button" class="suggestion-chip" data-prompt="What is your background and work experience?">
+                💼 Experience &amp; Career
+              </button>
+              <button type="button" class="suggestion-chip" data-prompt="Are you currently open to full-time or contract software engineering roles?">
+                📍 Availability &amp; Hire
+              </button>
+              <button type="button" class="suggestion-chip" data-prompt="How do you architect low-latency distributed microservices?">
+                ⚡ Systems Architecture
+              </button>
+            </div>
+          </div>
+
+          <!-- Chat Input Form -->
+          <form id="chat-form" class="chat-input-bar">
+            <label for="chat-input" class="visually-hidden">Ask Maddi Sahasra AI</label>
+            <div class="input-wrapper">
+              <input
+                type="text"
+                id="chat-input"
+                class="chat-text-input"
+                placeholder="Ask Maddi AI anything (e.g. 'How did you build the real-time telemetry engine?')..."
+                autocomplete="off"
+                maxlength="500"
+                required>
+            </div>
+            <button type="submit" id="chat-send-btn" class="btn btn-primary chat-send-btn" aria-label="Send message">
+              <span>Send</span>
+              <span class="send-icon" aria-hidden="true">▶</span>
+            </button>
+          </form>
+
+          <!-- Chat Footer Info / API Notice -->
+          <div class="chat-console-footer">
+            <span class="api-hook-notice">
+              <span class="notice-icon" aria-hidden="true">⚡</span>
+              <span>Autonomous Portfolio AI &bull; Ready for OpenAI API integration &bull; Type a message to chat</span>
+            </span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- END CHAT SECTION -->
+
+
+    <!-- =============================================================== -->
+    <!-- CONTACT / ETC SECTION PLACEHOLDER                               -->
+    <!-- =============================================================== -->
+    <section id="contact" class="contact-section section-padding" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-subtitle">Get In Touch</span>
+          <h2 id="contact-title" class="section-title">Contact</h2>
+        </header>
+
+        <div class="contact-card">
+          <p class="contact-text">
+            Have a project in mind, an engineering role open, or just want to chat about tech?
+            Feel free to reach out!
+          </p>
+          <div class="contact-actions">
+            <a href="mailto:engineer@example.com" class="btn btn-primary">Send Email</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">LinkedIn Profile</a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub Profile</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END CONTACT SECTION -->
+
+  </main>
+
+
+  <!-- ================================================================= -->
+  <!-- FOOTER                                                            -->
+  <!-- ================================================================= -->
+  <footer id="site-footer" class="site-footer">
+    <div class="container footer-container">
+      <p class="footer-copy">
+        &copy; 2026 Software Engineer Portfolio. Built with Semantic HTML5 &amp; Modern CSS.
+      </p>
+      <nav class="footer-nav" aria-label="Footer Quick Links">
+        <a href="#hero" class="footer-link">Back to Top &uarr;</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Script for Theme Toggle Interactivity -->
+  <script src="script.js"></script>
+</body>
+</html>
